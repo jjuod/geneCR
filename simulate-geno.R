@@ -4,6 +4,9 @@ library(sim1000G)
 
 setwd("~/Documents/results/cr/")
 
+nind = commandArgs(T)
+nind = as.numeric(nind[1])
+
 # simulate genotypes. Split in blocks to make life easier for the package
 # (14th block is empty, centromere)
 for(i in c(1:13,15:25)){
@@ -11,8 +14,8 @@ for(i in c(1:13,15:25)){
   gc()
   vcf = readVCF("1000g/1000G_EUR_chr1.vcf.gz", region_start=blocklen*(i-1), region_end=blocklen*i,
                 maxNumberOfVariants=1e5)
-  startSimulation(vcf, totalNumberOfIndividuals=3000)
-  ids = generateUnrelatedIndividuals(2000)
+  startSimulation(vcf, totalNumberOfIndividuals=nind+1000)
+  ids = generateUnrelatedIndividuals(nind)
   genotypes = retrieveGenotypes(ids)
   
   fam = data.frame(gtindex=ids, ids, pid=0, mid=0, sex=1, pheno=0)
