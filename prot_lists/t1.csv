@@ -1,0 +1,40 @@
+uniprot.id	gene	protein	Fold change (group Y/group D)	p-value
+P55786	NPEPPS	Puromycin-sensitive aminopeptidase	14.29	2.09E-02
+O15195	VILL	Villin-like protein	8.33	8.13E-03
+Q15293	RCN1	Reticulocalbin-1	3.70	1.38E-02
+Q6Q788	APOA5	Apolipoprotein A-V	2.04	1.95E-02
+P04040	CAT	Catalase	1.52	9.33E-03
+P01625	IGKV4-1	Ig kappa chain V-IV region Len	1.45	1.48E-02
+P13796	LCP1	Plastin-2	1.45	2.29E-02
+P00488	F13A1	Coagulation factor XIII A chain	1.45	4.27E-02
+P00739	HPR	Haptoglobin-related protein	1.45	2.57E-03
+Q9Y6Z7	COLEC10	Collectin-10	1.41	9.55E-03
+P01860	IGHG3	Ig gamma-3 chain C region	1.32	3.09E-02
+P02652	APOA2	Apolipoprotein A-II	1.28	1.58E-02
+Q03591	CFHR1	Complement factor H-related protein 1	1.28	3.24E-03
+P07195	LDHB	L-lactate dehydrogenase B chain	1.27	4.57E-02
+P01764	IGHV3-23	Ig heavy chain V-III region 23	1.25	2.63E-02
+P00748	F12	Coagulation factor XII	1.23	3.55E-02
+Q8NG11	TSPAN14	Tetraspanin-14	1.23	2.29E-03
+P03952	KLKB1	Plasma kallikrein	1.22	9.77E-03
+P01701	IGLV1-51	Ig lambda chain V-I region NEW	1.22	2.45E-02
+P01781	IGHV3-7	Ig heavy chain V-III region GAL	1.19	3.89E-02
+O95445	APOM	Apolipoprotein M	1.18	8.91E-03
+P08697	SERPINF2	Alpha-2-antiplasmin	1.18	4.27E-02
+P19827	ITIH1	Inter-alpha-trypsin inhibitor heavy chain H1	1.15	2.95E-02
+P07357	C8A	Complement component C8 alpha chain	1.11	4.57E-02
+O00391	QSOX1	Sulfhydryl oxidase 1	0.91	3.80E-02
+P07477	PRSS1	Trypsin-1	0.81	9.77E-03
+Q9UQ72	PSG11	Pregnancy-specific beta-1-glycoprotein 11	0.80	2.04E-02
+P01601	IGKV1D-16	Ig kappa chain V-ID region 16 (Fragment)	0.79	4.79E-02
+P07333	CSF1R	Macrophage colony-stimulating factor 1 receptor	0.79	4.07E-02
+P01612	IGKV1-39	Ig kappa chain V-I region Mev	0.77	1.41E-02
+P01611	IGKV1D-12	Ig kappa chain V-I region Wes	0.70	1.20E-02
+P06318	IGLV6-57	Ig lambda chain V-VI region WLT	0.58	2.04E-03
+P04430	IGKV1-16	Ig kappa chain V-I region BAN	0.55	2.57E-02
+Q76LX8	ADAMTS13	A disintegrin and metalloproteinase with thrombospondin motifs 13	0.52	1.66E-02
+P68032	ACTC1	Actin, alpha cardiac muscle 1	0.46	4.57E-03
+P83593	IGKV4-1	Ig kappa chain V-IV region STH (Fragment)	0.45	1.62E-02
+Q6ZS72	C19orf35	Putative uncharacterized protein C19orf35	0.43	1.15E-02
+O75179	ANKRD17	Ankyrin repeat domain-containing protein 17	0.34	4.68E-02
+P05164	MPO	Myeloperoxidase	0.15	2.29E-04

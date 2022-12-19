@@ -1,0 +1,43 @@
+gene	uniprot.id	protein	p-value
+AAT	P01009	α-1-antitrypsin (isoform 1)	0.0204
+AAT	P01009	α-1-antitrypsin (isoform 1)	0.0024
+AAT	P01009	α-1-antitrypsin (isoform 1)	0.203
+AAT	P01009	α-1-antitrypsin (isoform 1)	0.2153
+ACTB	P60709	Actin, cytoplasmic 1 (fragment)	0.019
+ALB	P02768	Serum albumin	0.022
+ANXA5	P08758	Annexin A5 (fragment)	0.0173
+APCS	P02743	Serum amyloid P-component	0.0065
+APOA1	P02647	Apolipoprotein A-I	0.0206
+CLU	P10909	Clusterin (isoform 3)	0.0484
+CLU	P10909	Clusterin (isoform 3)	0.0748
+CLU	P10909	Clusterin (isoform 3)	0.0983
+CPNE1	Q99829	Copine-1	0.0019
+EEF2	P13639	Elongation factor 2	0.0052
+FGB	P02675	Fibrinogen ß chain (C-terminal fragment)	0.1931
+FGB	P02675	Fibrinogen ß chain (C-terminal fragment)	0.1668
+FGB	P02675	Fibrinogen ß chain (C-terminal fragment)	0.1631
+FGB	P02675	Fibrinogen ß chain (C-terminal fragment)	0.3729
+FGG	P02679	Fibrinogen γ (isoform γ-B,A)	0.3362
+FGG	P02679	Fibrinogen γ (isoform γ-B,A)	0.3428
+FGG	P02679	Fibrinogen γ (isoform γ-B,A)	0.3384
+FGG	P02679	Fibrinogen γ (isoform γ-B,A)	0.3252
+FTL	P02792	Ferritin light chain	0.0025
+GSN	P06396	Gelsolin (isoform 1)	0.0352
+HBG1/2	P69891/2	Hemoglobin subunit γ-1/2	0.0404
+HNRNPK	P61978		0.0786
+HSPA5	P11021	78 kDa glucose-regulated protein	0.0295
+ITIH4	Q14624	Inter-α-trypsin inhibitor heavy chain H4 (isoform 1)	0.0031
+ITIH4	Q14624	Inter-α-trypsin inhibitor heavy chain H4 (isoform 1)	0.0017
+ITIH4	Q14624	Inter-α-trypsin inhibitor heavy chain H4 (isoform 1)	0.015
+ITIH4	Q14624	Inter-α-trypsin inhibitor heavy chain H4 (isoform 1)	0.0047
+KRT8	P05787	Keratin, type II cyto-skeletal 8 (isoform 1,2)	0.3283
+KRT8	P05787	Keratin, type II cyto-skeletal 8 (isoform 1,2)	0.1649
+KRT8	P05787	Keratin, type II cyto-skeletal 8 (isoform 1,2)	0.2395
+KRT8	P05787	Keratin, type II cyto-skeletal 8 (isoform 1,2)	0.2407
+KRT18	P05783	Keratin, type I  cytoskeletal 18	0.3555
+KRT18	P05783	Keratin, type I  cytoskeletal 18	0.3611
+KRT19	P08727	Keratin, type I cytoskeletal 19 (C-terminal fragment)	0.1033
+NUDT16	Q96DE0	U8 snoRNA-decapping enzyme (isoform 1)	0.1953
+TF	P02787	Serotransferrin	0.0087
+TAGLN2	P37802	Transgelin-2 (isoform 1,2)	0.0029
+VIM	P08670	Vimentin	0.0048

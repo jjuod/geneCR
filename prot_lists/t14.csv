@@ -1,0 +1,84 @@
+uniprot-ids	gene	protein	p-value
+IPI00007047	S100A8	protein S100-A8	4.4e-05
+IPI00218131	S100A12	protein S100-A12	2.7e-02
+IPI00027769	ELA2	leukocyte elastase precursor	2.0e-02
+IPI00006988	RETN	resistin precursor	8.0e-04
+IPI00180240, IPI00220828, IPI00719405, IPI00815642, IPI00815829, IPI00815835, IPI00816008, IPI00816288, IPI00816464	TMSL3	thymosin-like 3	2.0e-03
+IPI00007244, IPI00236554, IPI00236556	MPO	isoform H17 of Myeloperoxidase precursor	2.1e-03
+IPI00005721, IPI00021827	DEFA1; LOC653600; LOC728358	neutrophil defensin 1 precursor	5.5e-04
+IPI00019600	UBE2V2	ubiquitin-conjugating enzyme E2 variant 2	2.9e-02
+IPI00027462	S100A9	protein S100-A9	3.8e-04
+IPI00028064	CTSG	cathepsin G precursor	4.6e-03
+IPI00018534, IPI00020101, IPI00152906, IPI00303133, IPI00329665, IPI00419833, IPI00554798, IPI00719084, IPI00794461, IPI00815755	HIST1H2BL	histone H2B type 1-L	2.5e-03
+IPI00292532	CAMP	antibacterial protein FALL-39 precursor	2.9e-02
+IPI00027509	MMP9	matrix metalloproteinase-9 precursor	8.2e-04
+IPI00019502	MYH9	Myosin-9	1.2e-03
+IPI00171611, IPI00216402, IPI00219038, IPI00465070, IPI00719351	HIST2H3C; HIST2H3A histone H3.2	8.4e-03
+IPI00018873, IPI00472879	PBEF1	isoform 1 of nicotinamide phosphoribosyltransferase	1.2e-03
+IPI00419585	PPIA; LOC653214; LOC654188	peptidyl-prolyl cis-trans isomerase A	4.3e-05
+IPI00465248	ENO1	Isoform α-enolase of α-enolase	5.4e-03
+IPI00759644	FK506	binding protein12	7.3e-05
+IPI00217466	HIST1H1D	histone H1.3	1.7e-02
+IPI00021439, IPI00021440	ACTB	actin, cytoplasmic 1	8.9e-06
+IPI00220644, IPI00479186	PKM2	isoform M1 of Pyruvate kinase isozymes M1/M2	3.9e-04
+IPI00010471	LCP1	plastin-2	3.2e-04
+IPI00453473	HIST1H4E; HIST1H4F; HIST1H4A; HIST1H4K; HIST1H4C; HIST1H4L; HIST2H4A; HIST1H4D; HIST2H4B; HIST1H4H; HIST1H4B; HIST1H4I; HIST1H4J; HIST4H4 histone H4	3.8e-03
+IPI00012011, IPI00784459	CFL1	cofilin-1	2.4e-04
+IPI00298860	LTF	growth-inhibiting protein 12	3.2e-04
+IPI00021085	PGLYRP1	peptidoglycan recognition protein precursor	7.8e-05
+IPI00218834, IPI00640044, IPI00796109	FCGR3A	low affinity immunoglobulin-γ-Fc region receptor III-A precursor	6.1e-04
+IPI00013508, IPI00759776	ACTN1	α-actinin-1	2.9e-02
+IPI00178083, IPI00218319, IPI00218320, IPI00382894	TPM3	29 kDa protein	1.3e-03
+IPI00788802	TKT	transketolase variant (Fragment)	3.4e-04
+IPI00216318, IPI00640721, IPI00645801, IPI00759832, IPI00795517	YWHAB	isoform long of 14-3-3 protein β/α	4.0e-05
+IPI00299547	LCN2	neutrophil gelatinase-associated lipocalin precursor	7.0e-03
+IPI00291005	MDH1	malate dehydrogenase, cytoplasmic	4.1e-03
+IPI00027341	CAPG	macrophage-capping protein	2.7e-04
+IPI00217987, IPI00645887	ITGAM	integrin α-M precursor	1.2e-03
+IPI00418471, IPI00827679	VIM	vimentin	4.5e-05
+IPI00002147	CHI3L1	chitinase-3-like protein 1 precursor	5.2e-04
+IPI00293276, IPI00790382	MIF	macrophage migration inhibitory factor	2.1e-03
+IPI00465028, IPI00797687	TPI1	triosephosphate isomerase 1 variant	4.2e-04
+IPI00032292, IPI00642739	TIMP1	Metalloproteinase inhibitor 1 precursor	1.6e-05
+IPI00027444	SERPINB1	leukocyte elastase inhibitor	2.3e-05
+IPI00219757, IPI00796076	GSTP1	glutathione S-transferase P	2.3e-05
+IPI00299024	BASP1	brain acid soluble protein 1	1.9e–03
+IPI00021263, IPI00790768	YWHAZ	14-3-3 protein zeta/delta	1.6e-03
+IPI00010270	RAC2	Ras-related C3 botulinum toxin substrate 2 precursor	2.1e-02
+IPI00019755	GSTO1	glutathione transferase omega-1	1.7e-06
+IPI00783881	SFTPA1	similar to Pulmonary surfactant-associated protein A1 precursor	3.6e-02
+IPI00075248, IPI00386621, IPI00794543	CALM2; CALM1; CALM3 calmodulin	9.1e-04
+IPI00807640	HSPA1B; HSPA1A	heat shock 70 kDa protein 1B	8.5e-05
+IPI00465439	ALDOA	fructose-bisphosphate aldolase A	7.9e-04
+IPI00219525, IPI00747533	PGD	6-phosphogluconate dehydrogenase, decarboxylating	5.1e-03
+IPI00003815, IPI00793767, IPI00794402, IPI00796541	ARHGDIA	Rho GDP-dissociation inhibitor 1	2.0e-04
+IPI00033494	MRLC2	myosin regulatory light chain	5.7e-03
+IPI00216298, IPI00552768	TXN	thioredoxin	4.5e-03
+IPI00025252, IPI00657680	PDIA3	protein disulfide-isomerase A3 precursor	6.4e-04
+IPI00465436	CAT	catalase	1.9e-03
+IPI00219365	MSN	moesin	7.6e-04
+IPI00169383	PGK1	phosphoglycerate kinase 1	5.0e-04
+IPI00216691	PFN1	profilin-1	1.3e-03
+IPI00012887, IPI00640540	CTSL1	cathepsin L precursor	3.9e-03
+IPI00003362	HSPA5	HSPA5 protein	9.0e-04
+IPI00453476	hCG_2015269	similar to phosphoglycerate mutase 1 (phosphoglycerate mutase isozyme B) (PGAM-B) (BPG-dependent PGAM 1) isoform 1	6.3e-04
+IPI00413778	FKBP1A	FKBP1A protein	9.3e-03
+IPI00013808	ACTN4	α-actinin-4	4.4e-05
+IPI00012048, IPI00026260, IPI00029091, IPI00375531, IPI00604590, IPI00790856, IPI00791971, IPI00795292, IPI00798187	NME1	nucleoside diphosphate kinase A	1.3e-02
+IPI00220642	YWHAG	14-3-3 protein-γ	7.0e-06
+IPI00004573	PIGR	polymeric-immunoglobulin receptor precursor	3.3e-02
+IPI00302592, IPI00333541, IPI00644576	FLNA	filamin A, α	1.0e-03
+IPI00291175, IPI00307162	VCL	isoform 1 of Vinculin	1.6e-02
+IPI00027846	MMP8	neutrophil collagenase precursor	7.9e-03
+IPI00018146, IPI00796727	YWHAQ	14-3-3 protein theta	1.2e-02
+IPI00479145	KRT19	keratin, type I cytoskeletal 19	6.0e-03
+IPI00019038	LYZ	lysozyme C precursor	2.4e-03
+IPI00025512	HSPB1	heat-shock protein β-1	6.2e-03
+IPI00000874, IPI00640741, IPI00641244	PRDX1	peroxiredoxin-1	3.9e-03
+IPI00029997	PGLS	6-phosphogluconolactonase	2.7e-02
+IPI00022488	HPX	hemopexin precursor	1.4e-02
+IPI00297646	COL1A1	collagen α-1(I) chain precursor	2.4e-02
+IPI00025465, IPI00830128	OGN	mimecan precursor	1.7e-02
+IPI00026270	CPM	carboxypeptidase M precursor	4.4e-05
+IPI00010341	PRG2	bone-marrow proteoglycan precursor	8.3e-03
+IPI00219832	ABP1	isoform 2 of Amiloride-sensitive amine oxidase [copper-containing] precursor	7.7e-05

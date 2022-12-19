@@ -1,6 +1,7 @@
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(Rcapture)
 
 setwd("~/Documents/results/cr/")
 
@@ -52,6 +53,22 @@ snpstogenes = ungroup(snpstogenes) %>%
   complete(snps=1:nrow(bim))
 nrow(snpstogenes)
 
+# on average each gene's snps map to 2 genes however,
+# which would inflate the polygenicity estimate
+unnest(gff[,c("snps", "gene", "START", "END")], snps) %>%
+  left_join(snpstogenes, by="snps", suffix=c(".orig", ".snpmap")) %>%
+  group_by(gene.orig) %>%
+  summarize(ntarg=n_distinct(gene.snpmap)) %>%
+  summarize(mean(ntarg), median(ntarg))
+
+# so reverse the mapping, i.e. snp is assigned to the closest gene
+gff2 = filter(snpstogenes, !is.na(gene)) %>%
+  group_by(gene) %>%
+  summarize(snps=list(snps))
+
+save(gff2, file="1000g/genes_to_snps.RData")
+save(snpstogenes, file="1000g/snps_to_genes.RData")
+
 NCAUSALGENES = 50
 
 # Load the genotypes
@@ -60,56 +77,126 @@ gt3000 = t(as.matrix(gt3000))
 dim(gt3000)
 # gt3000[1:10, 1:10]
 
+gt2000 = data.table::fread("1000g/simulated_2000R.raw", h=T)
+gt2000 = t(as.matrix(gt2000))
+dim(gt2000)
+# gt2000[1:10, 1:10]
+
 gt1000 = data.table::fread("1000g/simulated_1000R.raw", h=T)
 gt1000 = t(as.matrix(gt1000))
 dim(gt1000)
 # gt1000[1:10, 1:10]
 
 
+# ------------------------------------------
+# SIMULATIONS
+
+runGWAS = function(ys, ids, bfile){
+  ys = data.frame("FID"=ids, "IID"=ids, "Y"=ys)
+  write.table(ys, "simphenos/tmpy.pheno", sep="\t", col.names = T, row.names = F, quote=F)
+  
+  # run plink assoc:
+  system(paste0("plink --bfile 1000g/",bfile," --pheno simphenos/tmpy.pheno --assoc --out simphenos/tmp_assoc"),
+         ignore.stdout=T)
+  
+  # analyze the results:
+  res = read.table("simphenos/tmp_assoc.qassoc", h=T)
+  return(which(res$P<5e-8))
+}
 
 # ------------------------------------------
-# simulation rounds
+# two samples, M0 only
 
-# TODO store these:
-h2s = c()
-causalgenes = list()
-numsignhits = c()
-obsgenes = list()
+summaries = data.frame(h2s=NULL, numsignhits=NULL, run=NULL, i=NULL)
+crres = tibble()
+
+NITER = 50
+
+for(i in 1:NITER){
+  print(i)
+  causal = sample_n(gff2[,c("gene", "snps")], NCAUSALGENES)
+  causalgenes = unique(causal$gene)
+  obsgenes = list()
+  
+  for(run in c(1000, 2000, 3000)){
+    causal$geneeff = rnorm(nrow(causal), 0, 0.5)
+    causalsnps = unnest(causal, snps)
+    causalsnps$snpeff = rnorm(nrow(causalsnps), causalsnps$geneeff, 0.5)
+    
+    # simulate phenos
+    xbeta = NULL
+    ids = 1:run
+    bfile = paste0("simulated_", run)
+    
+    if(run==1000){
+      xbeta = as.numeric(causalsnps$snpeff %*% gt1000[causalsnps$snps+6,])
+    } else if(run==2000){
+      xbeta = as.numeric(causalsnps$snpeff %*% gt2000[causalsnps$snps+6,])
+    } else {
+      xbeta = as.numeric(causalsnps$snpeff %*% gt3000[causalsnps$snps+6,])
+    }
+    ys = xbeta + rnorm(length(xbeta), 0, 40)
+    
+    ressnps = runGWAS(ys, ids, bfile)
+    foundgenes = snpstogenes$gene[ressnps]
+    foundgenes = unique(foundgenes[!is.na(foundgenes)])
+    obsgenes[[length(obsgenes)+1]] = foundgenes
+    
+    # store heritability etc:
+    newrow = data.frame(h2s=var(xbeta)/var(ys), numsignhits=length(ressnps),
+                        numsigngenes=length(foundgenes), run=run, i=i)
+    summaries = bind_rows(summaries, newrow)
+  }
+  # print(summaries)
+  
+  # Processing for C-R:
+  listall = unique(unlist(obsgenes))
+  capt.hist = sapply(obsgenes, function(x) as.numeric(listall %in% x))
+  # print(capt.hist)
+
+  # Run C-R + handle exceptions:  
+  if(length(listall)==1){
+    # mark NAs if only one gene reported
+    mod = data.frame(abundance=NA, stderr=NA, deviance=NA, df=NA, AIC=NA, BIC=NA, infoFit=NA)
+  } else {
+    mod = data.frame(closedp(capt.hist)$results)
+    # mark NAs in no-overlap cases:
+    notconverged = which(mod$abundance>1e7 | mod$abundance<0)
+    mod$abundance[notconverged] = NA
+    mod$stderr[notconverged] = NA
+  }
+  mod$i = i
+  mod$model = rownames(mod)
+  
+  crres = bind_rows(crres, mod)
+}
+
+# (the unnamed one is s=30)
+write.table(crres, "crres_x3_s40.csv", sep="\t", quote=F, col.names=T, row.names=F)
+write.table(summaries, "studysummaries_x3_s40.csv", sep="\t", quote=F, col.names=T, row.names=F)
+
+crres = read.table("crres_x3_s40.csv", h=T)
+summaries = read.table("studysummaries_x3_s40.csv", h=T)
+
+summaries
+crres
+
+mean(crres$abundance, na.rm=T)
+median(crres$abundance, na.rm=T)
+table(is.na(crres$abundance))
+
+mean(summaries$h2s)
+median(summaries$numsignhits)
+
+group_by(crres, model) %>%
+  summarize(me = mean(abundance, na.rm=T), md= median(abundance, na.rm=T))
 
 
-causal = sample_n(gff[,c("gene", "snps")], NCAUSALGENES)
-causal$geneeff = rnorm(nrow(causal), 0, 0.5)
-causal = unnest(causal, snps)
-causal$snpeff = rnorm(nrow(causal), causal$geneeff, 0.5)
+# ----------------
+# analyze the runs
 
-# simulate phenos
-xbeta = as.numeric(causal$snpeff %*% gt3000[causal$snps+6,])
-ys = xbeta + rnorm(length(ys), 0, 50)
+crres = read.table("crres_2000x2.csv", h=T)
+summaries = read.table("studysummaries_2000x2.csv", h=T)
 
-# heritability:
-var(xbeta)/var(ys)
-
-ys = data.frame("FID"=1:length(ys), "IID"=1:length(ys), "Y"=ys)
-write.table(ys, "simphenos/tmpy.pheno", sep="\t", col.names = T, row.names = F, quote=F)
-
-# run plink assoc:
-system("plink --bfile 1000g/simulated_3000 --pheno simphenos/tmpy.pheno --assoc --out simphenos/tmp_assoc")
-
-# analyze the results:
-res = read.table("simphenos/tmp_assoc.qassoc", h=T)
-nrow(causal)
-table(res$P<5e-8)
-
-head(causal)
-which(res$P<5e-8)
-
-unique(causal$gene)
-foundgenes = snpstogenes$gene[which(res$P<5e-8)]
-unique(foundgenes[!is.na(foundgenes)])
-
-# TODO try out & set up Rcapture analysis part
-list1 = unique(causal$gene)
-list2 = unique(foundgenes[!is.na(foundgenes)])
-
-listall = union(list1, list2)
-sapply(list(list1, list2), function(x) listall %in% x)
+median(crres$abundance, na.rm=T)
+mean(crres$abundance, na.rm=T)

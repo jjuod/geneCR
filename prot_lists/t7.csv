@@ -1,0 +1,92 @@
+uniprot.id	protein	gene	p-value
+P01860	Ig gamma-3 chain C region 	IGHG3	3.04E-08
+P02675	Fibrinogen beta chain 	FIBB	2.39E-07
+P02649	Apolipoprotein E 	APOE	1.71E-06
+P01019	Angiotensinogen 	ANGT	2.79E-06
+P05155-3	Isoform 3 of Plasma protease C1 inhibitor 	IC1	4.81E-06
+P0DOY3	Ig lambda-3 chain C regions 	LAC3	8.76E-06
+B9A064	Immunoglobulin lambda-like polypeptide 5 	IGLL5	1.32E-05
+P04264	Keratin, type II cytoskeletal 1 	K2C1	1.47E-05
+P0CF74	Ig lambda-6 chain C region 	LAC6	1.69E-05
+P35858-2	Isoform 2 of Insulin-like growth factor-binding protein complex acid labile subunit 	ALS	2.44E-05
+P35858	Insulin-like growth factor-binding protein complex acid labile subunit 	ALS	2.44E-05
+P01011	Alpha-1-antichymotrypsin 	AACT	2.53E-05
+P01857	Ig gamma-1 chain C region 	IGHG1	3.29E-05
+P02671	Fibrinogen alpha chain 	FIBA	3.78E-05
+P02768-2	Isoform 2 of Serum albumin 	ALBU	4.39E-05
+P10643	Complement component C7 	CO7	6.14E-05
+Q13219	Pappalysin-1 	PAPP1	6.23E-05
+P07333	Macrophage colony-stimulating factor 1 receptor 	CSF1R	8.79E-05
+Q9UIR5	Apolipoprotein(a) 	APOA	8.83E-05
+P01876	Ig alpha-1 chain C region 	IGHA1	9.14E-05
+P05543	Thyroxine-binding globulin 	THBG	0.000107
+P02771	Alpha-fetoprotein 	FETA	0.000109
+P06702	Protein S100-A9 	S10A9	0.00011
+P01834	Ig kappa chain C region 	IGKC	0.000127
+P02768	Serum albumin 	ALBU	0.000133
+P20742	Pregnancy zone protein 	PZP	0.000135
+P03951	Coagulation factor XI 	FA11	0.000137
+P01024	Complement C3 	CO3	0.000174
+P01859	Ig gamma-2 chain C region 	IGHG2	0.000323
+P05546	Heparin cofactor 2 	HEP2	0.000384
+P68871	Hemoglobin subunit beta 	HBB	0.000476
+P01877	Ig alpha-2 chain C region 	IGHA2	0.000477
+P01861	Ig gamma-4 chain C region 	IGHG4	0.000527
+P07360	Complement component C8 gamma chain 	CO8G	0.000531
+P02747	Complement C1q subcomponent subunit C 	C1QC	0.000591
+P00915	Carbonic anhydrase 1 	CAH1	0.000617
+P12259	Coagulation factor V 	FA5	0.000641
+P02533	Keratin, type I cytoskeletal 14 	K1C14	0.000647
+P02763	Alpha-1-acid glycoprotein 1 	A1AG1	0.000864
+P29622	Kallistatin 	KAIN	0.000917
+P01031	Complement C5 	CO5	0.001089
+P02743	Serum amyloid P-component 	SAMP	0.001242
+P01871-2	Isoform 2 of Ig mu chain C region 	IGHM	0.001269
+P08779	Keratin, type I cytoskeletal 16 	K1C16	0.001342
+P01871	Ig mu heavy chain disease protein 	MUCB	0.001358
+P27169	Serum paraoxonase/arylesterase 1 	PON1	0.001385
+P02766	Transthyretin 	TTHY	0.001617
+P0DOY2	Ig lambda-2 chain C regions 	LAC2	0.001779
+P13645	Keratin, type I cytoskeletal 10 	K1C10	0.001963
+Q9UK55	Protein Z-dependent protease inhibitor 	ZPI	0.001965
+P08697	Alpha-2-antiplasmin 	A2AP	0.002061
+Q9Y6R7	IgGFc-binding protein 	FCGBP	0.002697
+P07737	Profilin-1 	PROF1	0.002864
+P80108	Phosphatidylinositol-glycan-specific phospholipase D 	PHLD	0.003121
+P02042	Hemoglobin subunit delta 	HBD	0.003607
+P02746	Complement C1q subcomponent subunit B 	C1QB	0.004584
+P13727	Bone marrow proteoglycan 	PRG2	0.004952
+O00391	Sulfhydryl oxidase 1 	QSOX1	0.005632
+P32119	Peroxiredoxin-2 	PRDX2	0.005664
+Q96IY4	Carboxypeptidase B2 	CBPB2	0.00654
+P15169	Carboxypeptidase N catalytic chain 	CBPN	0.008129
+O43866	CD5 antigen-like 	CD5L	0.008157
+P04180	Phosphatidylcholine-sterol acyltransferase 	LCAT	0.008275
+P02751-2	Isoform 2 of Fibronectin 	FINC	0.009148
+Q15166	Serum paraoxonase/lactonase 3 	PON3	0.009238
+Q6EMK4	Vasorin 	VASN	0.009713
+O75882	Attractin 	ATRN	0.009895
+O75882-3	Isoform 3 of Attractin 	ATRN	0.009895
+P05154	Plasma serine protease inhibitor 	IPSP	0.010451
+Q7Z794	Keratin, type II cytoskeletal 1b 	K2C1B	0.013213
+P00740	Coagulation factor IX 	FA9	0.013271
+K2C5	Keratin, type II cytoskeletal 5 	K2C5	0.016838
+P48668	Keratin, type II cytoskeletal 6C 	K2C6C	0.017561
+O75636-2	Isoform 2 of Ficolin-3 	FCN3	0.018318
+P35908	Keratin, type II cytoskeletal 2 epidermal 	K22E	0.020987
+P19652	Alpha-1-acid glycoprotein 2 	A1AG2	0.021909
+P04206	Ig kappa chain V-III region GOL	KV307	0.024424
+P01622	Ig kappa chain V-III region Ti 	KV304	0.024424
+P22792	Carboxypeptidase N subunit 2 	CPN2	0.025517
+P08709	Coagulation factor VII 	FA7	0.026046
+O00187	Mannan-binding lectin serine protease 2 	MASP2	0.026548
+Q15238	Pregnancy-specific beta-1-glycoprotein 5 	PSG5	0.031586
+Q00887	Pregnancy-specific beta-1-glycoprotein 9 	PSG9	0.031633
+P29401-2	Isoform 2 of Transketolase 	TKT	0.03196
+Q15582	Transforming growth factor-beta-induced protein ig-h3 	BGH3	0.033166
+P22352	Glutathione peroxidase 3 	GPX3	0.03376
+P05090	Apolipoprotein D 	APOD	0.034811
+SEPP1	Selenoprotein P 	SEPP1	0.035695
+P49747	Cartilage oligomeric matrix protein 	COMP	0.043982
+P49747-2	Isoform 2 of Cartilage oligomeric matrix protein 	COMP	0.043982
+P59666	Neutrophil defensin 3 	DEF3	0.048175

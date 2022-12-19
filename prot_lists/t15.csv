@@ -1,0 +1,124 @@
+protein	gene	gene.again	p-value	q-value
+Sucrase-isomaltase, intestinal	SUIS	SI	3.72E-05	0.012145
+Mucin-13	MUC13	MUC13	1.28E-04	0.015278
+Glycodelin	PAEP	PAEP	2.47E-02	0.027545
+Calumenin	CALU	CALU	3.38E-04	0.009922
+Insulin-like growth factor-binding protein 7	IBP7	IGFBP7	3.08E-02	0.015678
+Ig lambda-7 chain C region	LAC7	IGLC7	8.57E-03	0.01726
+Creatine kinase B-type	KCRB	CKB	3.15E-06	0.00062
+Periostin	POSTN	POSTN	2.14E-03	0.011479
+Apolipoprotein B-100	APOB	APOB	3.17E-02	0.019494
+Calcium-binding protein 39	CAB39	CAB39	1.31E-03	0.012618
+Alpha-fetoprotein	FETA	AFP	5.54E-03	0.016211
+Coiled-coil domain-containing protein 80	CCD80	CCDC80	1.48E-02	0.015702
+Protein ERGIC-53	LMAN1	LMAN1	1.04E-03	0.011251
+Mimecan	MIME	OGN	9.17E-03	0.018053
+SPARC	SPRC	SPARC	8.90E-03	0.017934
+ProSAAS	PCSK1	PCSK1N	8.32E-04	0.020359
+Chromogranin-A	CMGA	CHGA	6.48E-03	0.015877
+Na(+)/H(+) exchange regulatory cofactor NHE-RF1	NHRF1	SLC9A3R1	3.94E-03	0.012107
+45 kDa calcium-binding protein	CAB45	SDF4	5.47E-03	0.018764
+Lipolysis-stimulated lipoprotein receptor	LSR	LSR	9.45E-04	0.011703
+Golgi membrane protein 1	GOLM1	GOLM1	2.84E-03	0.015639
+Angiotensin-converting enzyme 2	ACE2	ACE2	8.32E-03	0.021355
+Protein disulfide-isomerase A6	PDIA6	PDIA6	2.22E-03	0.012574
+Histidine-rich glycoprotein	HRG	HRG	7.76E-03	0.016057
+Cadherin-2	CADH2	CDH2	7.87E-03	0.026683
+Lysosomal protective protein	PPGB	CTSA	2.79E-02	0.023932
+Trans-Golgi network integral membrane protein 2	TGON2	TGOLN2	1.16E-02	0.023044
+Gamma-glutamyl hydrolase	GGH	GGH	5.14E-03	0.0137
+Reticulocalbin-1	RCN1	RCN1	1.97E-02	0.030929
+Collagen alpha-2(I) chain	CO1A2	COL1A2	3.13E-02	0.041558
+Latent-transforming growth factor beta-binding protein 1	LTBP1	LTBP1	3.23E-02	0.034407
+Epidermal growth factor receptor kinase substrate 8-like protein 2	ES8L2	EPS8L2	2.07E-02	0.024991
+Ribonuclease pancreatic	RNAS1	RNASE1	9.65E-03	0.01846
+Beta-hexosaminidase subunit beta	HEXB	HEXB	4.84E-02	0.031675
+Retinoic acid receptor responder protein 2	RARR2	RARRES2	4.17E-02	0.03146
+Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA	MA1A1	MAN1A1	6.09E-03	0.020596
+Macrophage colony-stimulating factor 1	CSF1	CSF1	3.65E-02	0.031982
+Cell growth regulator with EF hand domain protein 1	CGRE1	CGREF1	2.12E-02	0.022773
+Butyrophilin subfamily 2 member A1	BT2A1	BTN2A1	1.56E-02	0.018158
+Cystatin-C	CYTC	CST3	3.81E-02	0.018548
+Complement factor H	CFAH	CFH	2.28E-02	0.04773
+Thyroxine-binding globulin	THBG	SERPINA7	7.98E-03	0.020712
+Peptidyl-prolyl cis-trans isomerase A	PPIA	PPIA	1.28E-02	0.041053
+Actin, cytoplasmic 1	ACTB	ACTB	6.76E-03	0.027659
+Complement C2	CO2	C2	1.97E-02	0.040722
+Plasma kallikrein	KLKB1	KLKB1	2.75E-02	0.045497
+Plasma serine protease inhibitor	IPSP	SERPINA5	2.24E-02	0.046376
+Thioredoxin	THIO	TXN	6.07E-03	0.020698
+Complement component C8 gamma chain	CO8G	C8G	1.32E-02	0.025503
+Complement C3	CO3	C3	1.19E-02	0.035154
+F-box only protein 50	FBX50	NCCRP1	1.57E-02	0.028563
+Corticosteroid-binding globulin	CBG	SERPINA6	1.70E-02	0.046624
+Sex hormone-binding globulin	SHBG	SHBG	8.36E-03	0.037116
+Phosphoglycerate mutase 1	PGAM1	PGAM1	6.15E-03	0.027318
+Immunoglobulin lambda-like polypeptide 5	IGLL5	IGLL5	6.00E-03	0.020646
+Serotransferrin	TRFE	TF	4.12E-03	0.016413
+Ig heavy chain V-III region BUT	HV306	HV306	3.21E-02	0.023143
+Hyaluronan-binding protein 2	HABP2	HABP2	1.12E-02	0.029706
+Glutathione S-transferase P	GSTP1	GSTP1	3.32E-03	0.013557
+Apolipoprotein D	APOD	APOD	1.86E-02	0.045264
+IgGFc-binding protein	FCGBP	FCGBP	3.18E-03	0.018629
+Ig gamma-3 chain C region	IGHG3	IGHG3	1.81E-02	0.031927
+Inter-alpha-trypsin inhibitor heavy chain H1	ITIH1	ITIH1	7.24E-03	0.019659
+Kallistatin	KAIN	SERPINA4	1.08E-02	0.021014
+Fructose-bisphosphate aldolase A	ALDOA	ALDOA	6.06E-03	0.015875
+Keratin, type I cytoskeletal 18	K1C18	KRT18	1.52E-02	0.037337
+Calpain-1 catalytic subunit	CAN1	CAPN1	6.80E-03	0.017582
+Pyruvate kinase PKM	KPYM	PKM	1.69E-02	0.028273
+Macrophage-capping protein	CAPG	CAPG	5.17E-03	0.020984
+CD44 antigen	CD44	CD44	6.21E-04	0.004165
+Endosialin	CD248	CD248	1.80E-02	0.027393
+SH3 domain-binding glutamic acid-rich-like protein 3	SH3L3	SH3BGRL3	3.67E-02	0.029585
+Alpha-actinin-1	ACTN1	ACTN1	2.05E-02	0.029638
+Complement C1q subcomponent subunit C	C1QC	C1QC	3.47E-02	0.035386
+Metalloproteinase inhibitor 1	TIMP1	TIMP1	6.31E-03	0.022992
+Cystatin-M	CYTM	CST6	1.86E-03	0.018562
+Galectin-1	LEG1	LGALS1	1.78E-02	0.022761
+Apolipoprotein A-I	APOA1	APOA1	4.02E-04	0.005992
+Fetuin-B	FETUB	FETUB	9.22E-03	0.01824
+Profilin-1	PROF1	PFN1	5.86E-04	0.014434
+Collagen alpha-1(XIV) chain	COEA1	COL14A1	8.17E-03	0.026729
+Pappalysin-2	PAPP2	PAPPA2	2.25E-02	0.049267
+Intercellular adhesion molecule 1	ICAM1	ICAM1	1.22E-02	0.037099
+Vascular endothelial growth factor receptor 1	VGFR1	FLT1	1.73E-03	0.017732
+Phosphoglycerate kinase 1	PGK1	PGK1	3.49E-03	0.011879
+Elongation factor 1-alpha 1	EF1A1	EEF1A1	1.53E-02	0.024172
+Cystatin-B	CYTB	CSTB	2.80E-02	0.015599
+Plastin-2	PLSL	LCP1	2.33E-03	0.015743
+Inter-alpha-trypsin inhibitor heavy chain H2	ITIH2	ITIH2	6.81E-03	0.02069
+Ig alpha-1 chain C region	IGHA1	IGHA1	1.29E-03	0.013575
+6-phosphogluconate dehydrogenase, decarboxylating	6PGD	PGD	2.98E-03	0.012054
+Ig lambda chain V-III region LOI	LV302	LV302	1.36E-02	0.0219
+Peroxiredoxin-6	PRDX6	PRDX6	2.99E-03	0.01207
+Alpha-enolase	ENOA	ENO1	4.37E-03	0.013574
+Plasminogen activator inhibitor 1	PAI1	SERPINE1	7.18E-03	0.031322
+Peroxiredoxin-5, mitochondrial	PRDX5	PRDX5	1.86E-02	0.016328
+Mesothelin	MSLN	MSLN	1.86E-03	0.011367
+Leukocyte elastase inhibitor	ILEU	SERPINB1	1.51E-03	0.008107
+Serine protease inhibitor Kazal-type 5	ISK5	SPINK5	5.03E-04	0.006645
+Lipopolysaccharide-binding protein	LBP	LBP	2.88E-02	0.028525
+Protein S100-A9	S10A9	S100A9	9.30E-03	0.021633
+Transaldolase	TALDO	TALDO1	3.49E-02	0.020087
+Serpin B3	SPB3	SERPINB3	1.14E-02	0.017595
+Transcobalamin-1	TCO1	TCN1	2.04E-02	0.032826
+Low affinity immunoglobulin gamma Fc region receptor III-A	FCG3A	FCGR3A	1.99E-03	0.01411
+Pulmonary surfactant-associated protein B	PSPB	SFTPB	8.95E-03	0.014643
+Ig kappa chain V-III region B6	KV301	KV301	3.34E-02	0.025674
+Ig kappa chain V-II region RPMI 6410	KV206	KV206	2.97E-02	0.022845
+Bone marrow proteoglycan	PRG2	PRG2	8.17E-04	0.014447
+Cysteine-rich secretory protein 3	CRIS3	CRISP3	1.95E-03	0.046518
+Histone H4	H4	HIST1H4A	1.79E-02	0.013735
+Fatty acid-binding protein, epidermal	FABP5	FABP5	2.10E-04	0.001175
+Suprabasin	SBSN	SBSN	2.37E-03	0.008648
+Lactotransferrin	TRFL	LTF	2.46E-03	0.018239
+Protein S100-A4	S10A4	S100A4	3.99E-03	0.00641
+Neutrophil gelatinase-associated lipocalin	NGAL	LCN2	2.16E-04	0.00246
+Histone H2B type 1-N	H2B1N	HIST1H2BN	1.05E-02	0.020928
+Amiloride-sensitive amine oxidase [copper-containing]	AOC1	AOC1	2.80E-04	0.003619
+Rho GDP-dissociation inhibitor 2	GDIR2	ARHGDIB	1.06E-03	0.006665
+Ig kappa chain V-III region SIE	KV302	KV302	3.69E-02	0.029546
+Ig heavy chain V-I region V35	HV103	HV103	6.95E-03	0.013225
+Ig lambda chain V region 4A	LV001	LV001	9.90E-03	0.019352
+Antileukoproteinase	SLPI	SLPI	6.63E-06	8.52E-06

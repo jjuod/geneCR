@@ -1,0 +1,78 @@
+uniprot.id	protein	gene	p-value
+P68871	Hemoglobin subunit beta 	HBB	0.00009
+P13796	Plastin-2 	LCP1	0.0001
+P13727	Bone marrow proteoglycan 	PRG2	0.00035
+P08833	Insulin-like growth factor-binding protein 1 	IGFBP1	0.00046
+D6RE86	Ceruloplasmin (Fragment) 	CP	0.00055
+B4DWR5	cDNA FLJ51358, highly similar to Involucrin 	N/A	0.00057
+P51884	Lumican 	LUM	0.00087
+A0A087WW43	Inter-alpha-trypsin inhibitor heavy chain H3 	ITIH3	0.00174
+P22692	Insulin-like growth factor-binding protein 4 	IGFBP4	0.00187
+P06733	Alpha-enolase 	ENO1	0.00189
+Q06033-2	Isoform 2 of Inter-alpha-trypsin inhibitor heavy chain H3 	ITIH3	0.0019
+P15924	Desmoplakin 	DSP	0.00193
+P07476	Involucrin 	IVL	0.00211
+P13727-2	Isoform 2 of Bone marrow proteoglycan 	PRG2	0.00227
+P18669	Phosphoglycerate mutase 1 	PGAM1	0.00228
+B4DN75	cDNA FLJ60724, highly similar to Cartilage oligomeric matrix protein 	N/A	0.00247
+P35858-2	Isoform 2 of Insulin-like growth factor-binding protein complex acid labile subunit 	IGFALS	0.00247
+P26038	Moesin 	MSN	0.0025
+P69892	Hemoglobin subunit gamma-2 	HBG2	0.00297
+O00391	Sulfhydryl oxidase 1 	QSOX1	0.00335
+P29622	Kallistatin 	SERPINA4	0.00411
+Q96PD5	N-acetylmuramoyl-L-alanine amidase 	PGLYRP2	0.00423
+Q02487-2	Isoform 2B of Desmocollin-2 	DSC2	0.00452
+P04745	Alpha-amylase 1 	AMY1C	0.00462
+P00558	Phosphoglycerate kinase 1 	PGK1	0.00547
+Q6S8J3	POTE ankyrin domain family member E 	POTEE	0.00571
+P11465	Pregnancy-specific beta-1-glycoprotein 2 	PSG2	0.00596
+P32926	Desmoglein-3 	DSG3	0.00646
+P01034	Cystatin-C 	CST3	0.00669
+A0A087WXI2	IgGFc-binding protein 	FCGBP	0.0072
+Q53FR6	Cartilage oligomeric matrix protein variant (Fragment) 	N/A	0.00808
+B4DWU6	cDNA FLJ51361, highly similar to Keratin, type II cytoskeletal 6A 	N/A	0.00836
+Q00887	Pregnancy-specific beta-1-glycoprotein 9 	PSG9	0.00844
+P07358	Complement component C8 beta chain 	C8B	0.0095
+Q6P988	Palmitoleoyl-protein carboxylesterase NOTUM 	NOTUM	0.01164
+P05109	Protein S100-A8 	S100A8	0.01246
+Q5SZK8	FRAS1-related extracellular matrix protein 2 	FREM2	0.01287
+P25311	Zinc-alpha-2-glycoprotein 	AZGP1	0.01335
+P62805	Histone H4 	HIST4H4	0.0135
+B2R7Y0	cDNA, FLJ93654, highly similar to Homo sapiens serpin peptidase inhibitor, clade B (ovalbumin), member 2 (SERPINB2), mRNA 	N/A	0.01373
+P19801-2	Isoform 2 of Amiloride-sensitive amine oxidase [copper-containing] 	AOC1	0.01539
+P02788-2	Isoform DeltaLf of Lactotransferrin 	LTF	0.0154
+P80188	Neutrophil gelatinase-associated lipocalin 	LCN2	0.01568
+P60174-1	Isoform 2 of Triosephosphate isomerase 	TPI1	0.01577
+P11021	78 kDa glucose-regulated protein 	HSPA5	0.01599
+Q9BXP8	Pappalysin-2 	PAPPA2	0.01704
+P10451-3	Isoform C of Osteopontin 	SPP1	0.01799
+P05120	Plasminogen activator inhibitor 2 	SERPINB2	0.02117
+P26927	Hepatocyte growth factor-like protein 	MST1	0.02143
+O95633-2	Isoform 2 of Follistatin-related protein 3 	FSTL3	0.0217
+P69905	Hemoglobin subunit alpha 	HBA2	0.0222
+P04196	Histidine-rich glycoprotein 	HRG	0.0222
+P00915	Carbonic anhydrase 1 	CA1	0.02262
+P02042	Hemoglobin subunit delta 	HBD	0.0231
+P10451-5	Isoform 5 of Osteopontin 	SPP1	0.02325
+P07737	Profilin-1 	PFN1	0.02472
+Q53FV4	Lumican variant (Fragment) 	N/A	0.02473
+P15151-2	Isoform Beta of Poliovirus receptor 	PVR	0.02535
+P10451-2	Isoform B of Osteopontin 	SPP1	0.0274
+P15311	Ezrin 	EZR	0.02751
+O00468-6	Isoform 6 of Agrin 	AGRN	0.02757
+Q13219	Pappalysin-1 	PAPPA	0.02777
+P13797	Plastin-3 	PLS3	0.02831
+P09486	SPARC 	SPARC	0.03224
+P17948-4	Isoform 4 of Vascular endothelial growth factor receptor 1 	FLT1	0.03228
+P17948	Vascular endothelial growth factor receptor 1 	FLT1	0.03241
+Q99715	Collagen alpha-1(XII) chain 	COL12A1	0.03275
+H3BUX1	Mesothelin (Fragment) 	MSLN	0.03368
+Q59FF1	Insulin-like growth factor binding protein 2 variant (Fragment) 	N/A	0.03533
+P13646	Keratin, type I cytoskeletal 13 	KRT13	0.03555
+A0A087WYD8	Amine oxidase 	AOC1	0.03624
+P0DML2	Chorionic somatomammotropin hormone 1 	CSH1	0.04079
+P20061	Transcobalamin-1 	TCN1	0.04131
+P27797	Calreticulin 	CALR	0.04229
+G9K389	YWHAE/FAM22B fusion protein (Fragment) 	YWHAE/FAM22B fusion	0.04526
+B4DWS3	cDNA FLJ60407, highly similar to Serine protease inhibitor Kazal-type 5 (Fragment) 	N/A	0.04704
+B2R8I2	cDNA, FLJ93914, highly similar to Homo sapiens histidine-rich glycoprotein (HRG), mRNA 	N/A	0.04835
