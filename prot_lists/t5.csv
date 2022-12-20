@@ -1,66 +1,66 @@
-uniprot.id 	protein 	p-value
-P69892 	Hemoglobin subunit gamma-2 	0.05
-P69891 	Hemoglobin subunit gamma-1 	0.05
-P69905 	Hemoglobin subunit alpha 	0.05
-P68871 	Hemoglobin subunit beta 	0.05
-P00738 	Haptoglobin 	0.05
-P02771 	Alpha-fetoprotein 	0.05
-P02787 	Serotransferrin 	0.05
-P02790 	Hemopexin 	0.05
-Q9NPY3 	Complement component C1q receptor 	0.05
-P12259 	Coagulation factor V 	0.05
-P01024 	Complement C3 	0.05
-P07359 	Platelet glycoprotein Ib alpha chain 	0.05
-P00736 	Complement C1r subcomponent 	0.05
-P08697 	Alpha-2-antiplasmin 	0.05
-P04004 	Vitronectin 	0.05
-Q14520 	Hyaluronan-binding protein 2 	0.05
-P01008 	Antithrombin-III 	0.05
-P02671 	Fibrinogen alpha chain 	0.05
-P02679 	Fibrinogen gamma chain 	0.05
-P02675 	Fibrinogen beta chain 	0.05
-P00734 	Prothrombin 	0.05
-P02750 	Leucine-rich alpha-2-glycoprotein 	0.05
-Q6EMK4 	Vasorin 	0.05
-P01023 	Alpha-2-macroglobulin 	0.05
-P36955 	Pigment epithelium-derived factor 	0.05
-Q08380 	Galectin-3-binding protein 	0.05
-P02743 	Serum amyloid P-component 	0.05
-P04217 	Alpha-1B-glycoprotein 	0.05
-P02765 	Alpha-2-HS-glycoprotein 	0.05
-Q96PD5 	N-acetylmuramoyl-l-alanine amidase 	0.05
-Q6UXB8 	Peptidase inhibitor 16 	0.05
-P16070 	CD44 antigen 	0.05
-P02763 	Orosomucoid 1 	0.05
-P19652 	Orosomucoid 2 	0.05
-P22792 	Carboxypeptidase N subunit 2 	0.05
-P25311 	Zinc-alpha-2-glycoprotein 	0.05
-P14151 	l-selectin 	0.05
-P43652 	Afamin 	0.05
-P01011 	Alpha-1-antichymotrypsin 	0.05
-P02760 	Bikunin 	0.05
-Q14624 	Inter-alpha-trypsin inhibitor heavy chain H4 	0.05
-P19823 	Inter-alpha-trypsin inhibitor heavy chain H2 	0.05
-P19827 	Inter-alpha-trypsin inhibitor heavy chain H1 	0.05
-P01042 	Kininogen-1 	0.05
-P02649 	Apolipoprotein E 	0.05
-P06727 	Apolipoprotein A-IV 	0.05
-P02652 	Apolipoprotein A-II 	0.05
-P02647 	Apolipoprotein A-I 	0.05
-P02655 	Apolipoprotein C-II 	0.05
-P05090 	Apolipoprotein D 	0.05
-P04180 	Phosphatidylcholine-sterol acyltransferase 	0.05
-P01859 	Ig gamma-2 chain C region 	0.05
-P01857 	Ig gamma-1 chain C region 	0.05
-B9A064 	Immunoglobulin lambda-like polypeptide 5 	0.05
-P01861 	Ig gamma-4 chain C region 	0.05
-P01860 	Ig gamma-3 chain C region 	0.05
-P01834 	Ig kappa chain C region 	0.05
-P0CG06 	Ig lambda-3 chain C regions 	0.05
-P68032 	Actin, alpha cardiac muscle 1 	0.05
-P01019 	Angiotensinogen 	0.05
-P51884 	Lumican 	0.05
-Q9Y5Y7 	Hyaluronic acid receptor 1 	0.05
-P08185 	Corticosteroid-binding globulin 	0.05
-P10909 	Clusterin 	0.05
-P02768 	Serum albumin 	0.05
+uniprot.id	protein	p-value
+P69892	Hemoglobin subunit gamma-2	0.05
+P69891	Hemoglobin subunit gamma-1	0.05
+P69905	Hemoglobin subunit alpha	0.05
+P68871	Hemoglobin subunit beta	0.05
+P00738	Haptoglobin	0.05
+P02771	Alpha-fetoprotein	0.05
+P02787	Serotransferrin	0.05
+P02790	Hemopexin	0.05
+Q9NPY3	Complement component C1q receptor	0.05
+P12259	Coagulation factor V	0.05
+P01024	Complement C3	0.05
+P07359	Platelet glycoprotein Ib alpha chain	0.05
+P00736	Complement C1r subcomponent	0.05
+P08697	Alpha-2-antiplasmin	0.05
+P04004	Vitronectin	0.05
+Q14520	Hyaluronan-binding protein 2	0.05
+P01008	Antithrombin-III	0.05
+P02671	Fibrinogen alpha chain	0.05
+P02679	Fibrinogen gamma chain	0.05
+P02675	Fibrinogen beta chain	0.05
+P00734	Prothrombin	0.05
+P02750	Leucine-rich alpha-2-glycoprotein	0.05
+Q6EMK4	Vasorin	0.05
+P01023	Alpha-2-macroglobulin	0.05
+P36955	Pigment epithelium-derived factor	0.05
+Q08380	Galectin-3-binding protein	0.05
+P02743	Serum amyloid P-component	0.05
+P04217	Alpha-1B-glycoprotein	0.05
+P02765	Alpha-2-HS-glycoprotein	0.05
+Q96PD5	N-acetylmuramoyl-l-alanine amidase	0.05
+Q6UXB8	Peptidase inhibitor 16	0.05
+P16070	CD44 antigen	0.05
+P02763	Orosomucoid 1	0.05
+P19652	Orosomucoid 2	0.05
+P22792	Carboxypeptidase N subunit 2	0.05
+P25311	Zinc-alpha-2-glycoprotein	0.05
+P14151	l-selectin	0.05
+P43652	Afamin	0.05
+P01011	Alpha-1-antichymotrypsin	0.05
+P02760	Bikunin	0.05
+Q14624	Inter-alpha-trypsin inhibitor heavy chain H4	0.05
+P19823	Inter-alpha-trypsin inhibitor heavy chain H2	0.05
+P19827	Inter-alpha-trypsin inhibitor heavy chain H1	0.05
+P01042	Kininogen-1	0.05
+P02649	Apolipoprotein E	0.05
+P06727	Apolipoprotein A-IV	0.05
+P02652	Apolipoprotein A-II	0.05
+P02647	Apolipoprotein A-I	0.05
+P02655	Apolipoprotein C-II	0.05
+P05090	Apolipoprotein D	0.05
+P04180	Phosphatidylcholine-sterol acyltransferase	0.05
+P01859	Ig gamma-2 chain C region	0.05
+P01857	Ig gamma-1 chain C region	0.05
+B9A064	Immunoglobulin lambda-like polypeptide 5	0.05
+P01861	Ig gamma-4 chain C region	0.05
+P01860	Ig gamma-3 chain C region	0.05
+P01834	Ig kappa chain C region	0.05
+P0CG06	Ig lambda-3 chain C regions	0.05
+P68032	Actin, alpha cardiac muscle 1	0.05
+P01019	Angiotensinogen	0.05
+P51884	Lumican	0.05
+Q9Y5Y7	Hyaluronic acid receptor 1	0.05
+P08185	Corticosteroid-binding globulin	0.05
+P10909	Clusterin	0.05
+P02768	Serum albumin	0.05

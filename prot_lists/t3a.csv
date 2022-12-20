@@ -23,7 +23,7 @@ FGG	P02679	Fibrinogen γ (isoform γ-B,A)	0.3384
 FGG	P02679	Fibrinogen γ (isoform γ-B,A)	0.3252
 FTL	P02792	Ferritin light chain	0.0025
 GSN	P06396	Gelsolin (isoform 1)	0.0352
-HBG1/2	P69891/2	Hemoglobin subunit γ-1/2	0.0404
+HBG1	P69891	Hemoglobin subunit γ-1/2	0.0404
 HNRNPK	P61978		0.0786
 HSPA5	P11021	78 kDa glucose-regulated protein	0.0295
 ITIH4	Q14624	Inter-α-trypsin inhibitor heavy chain H4 (isoform 1)	0.0031

@@ -70,7 +70,7 @@ O75882-3	Isoform 3 of Attractin 	ATRN	0.009895
 P05154	Plasma serine protease inhibitor 	IPSP	0.010451
 Q7Z794	Keratin, type II cytoskeletal 1b 	K2C1B	0.013213
 P00740	Coagulation factor IX 	FA9	0.013271
-K2C5	Keratin, type II cytoskeletal 5 	K2C5	0.016838
+P13647	Keratin, type II cytoskeletal 5 	K2C5	0.016838
 P48668	Keratin, type II cytoskeletal 6C 	K2C6C	0.017561
 O75636-2	Isoform 2 of Ficolin-3 	FCN3	0.018318
 P35908	Keratin, type II cytoskeletal 2 epidermal 	K22E	0.020987
@@ -86,7 +86,7 @@ P29401-2	Isoform 2 of Transketolase 	TKT	0.03196
 Q15582	Transforming growth factor-beta-induced protein ig-h3 	BGH3	0.033166
 P22352	Glutathione peroxidase 3 	GPX3	0.03376
 P05090	Apolipoprotein D 	APOD	0.034811
-SEPP1	Selenoprotein P 	SEPP1	0.035695
+P49908	Selenoprotein P 	SEPP1	0.035695
 P49747	Cartilage oligomeric matrix protein 	COMP	0.043982
 P49747-2	Isoform 2 of Cartilage oligomeric matrix protein 	COMP	0.043982
 P59666	Neutrophil defensin 3 	DEF3	0.048175

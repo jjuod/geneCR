@@ -1,0 +1,124 @@
+uniprot.id	protein	gene	protein.orig	p.value
+P14410	Sucrase-isomaltase, intestinal [Cleaved into: Sucrase (EC 3.2.1.48); Isomaltase (EC 3.2.1.10)]	SUIS	Sucrase-isomaltase, intestinal	3.72e-05
+Q9H3R2	Mucin-13 (MUC-13) (Down-regulated in colon cancer 1)	MUC13	Mucin-13	0.000128
+P09466	Glycodelin (GD) (Placental protein 14) (PP14) (Pregnancy-associated endometrial alpha-2 globulin) (PAEG) (PEG) (Progestagen-associated endometrial protein) (Progesterone-associated endometrial protein) (Zona-binding inhibitory factor-1) (ZIF-1)	PAEP	Glycodelin	0.0247
+O43852	Calumenin (Crocalbin) (IEF SSP 9302)	CALU	Calumenin	0.000338
+Q16270	Insulin-like growth factor-binding protein 7 (IBP-7) (IGF-binding protein 7) (IGFBP-7) (IGFBP-rP1) (MAC25 protein) (PGI2-stimulating factor) (Prostacyclin-stimulating factor) (Tumor-derived adhesion factor) (TAF)	IBP7	Insulin-like growth factor-binding protein 7	0.0308
+A0M8Q6	NA	LAC7	Ig lambda-7 chain C region	0.00857
+P12277	Creatine kinase B-type (EC 2.7.3.2) (Brain creatine kinase) (B-CK) (Creatine kinase B chain) (Creatine phosphokinase B-type) (CPK-B)	KCRB	Creatine kinase B-type	3.15e-06
+Q15063	Periostin (PN) (Osteoblast-specific factor 2) (OSF-2)	POSTN	Periostin	0.00214
+P04114	Apolipoprotein B-100 (Apo B-100) [Cleaved into: Apolipoprotein B-48 (Apo B-48)]	APOB	Apolipoprotein B-100	0.0317
+Q9Y376	Calcium-binding protein 39 (MO25alpha) (Protein Mo25)	CAB39	Calcium-binding protein 39	0.00131
+P02771	Alpha-fetoprotein (Alpha-1-fetoprotein) (Alpha-fetoglobulin)	FETA	Alpha-fetoprotein	0.00554
+Q76M96	Coiled-coil domain-containing protein 80 (Down-regulated by oncogenes protein 1) (Up-regulated in BRS-3 deficient mouse homolog)	CCD80	Coiled-coil domain-containing protein 80	0.0148
+P49257	Protein ERGIC-53 (ER-Golgi intermediate compartment 53 kDa protein) (Gp58) (Intracellular mannose-specific lectin MR60) (Lectin mannose-binding 1)	LMAN1	Protein ERGIC-53	0.00104
+P20774	Mimecan (Osteoglycin) (Osteoinductive factor) (OIF)	MIME	Mimecan	0.00917
+P09486	SPARC (Basement-membrane protein 40) (BM-40) (Osteonectin) (ON) (Secreted protein acidic and rich in cysteine)	SPRC	SPARC	0.0089
+Q9UHG2	ProSAAS	PCSK1	ProSAAS	0.000832
+P10645	Chromogranin-A (CgA) (Pituitary secretory protein I) (SP-I) [Cleaved into: Vasostatin-1 (Vasostatin I); Vasostatin-2 (Vasostatin II); EA-92; ES-43; Pancreastatin; SS-18; WA-8; WE-14; LF-19; Catestatin (SL21); AL-11; GV-19; GR-44; ER-37; GE-25; Serpinin-RRG; Serpinin; p-Glu serpinin precursor]	CMGA	Chromogranin-A	0.00648
+O14745	Na(+)/H(+) exchange regulatory cofactor NHE-RF1 (NHERF-1) (Ezrin-radixin-moesin-binding phosphoprotein 50) (EBP50) (Regulatory cofactor of Na(+)/H(+) exchanger) (Sodium-hydrogen exchanger regulatory factor 1) (Solute carrier family 9 isoform A3 regulatory factor 1)	NHRF1	Na(+)/H(+) exchange regulatory cofactor NHE-RF1	0.00394
+Q9BRK5	45 kDa calcium-binding protein (Cab45) (Stromal cell-derived factor 4) (SDF-4)	CAB45	45 kDa calcium-binding protein	0.00547
+Q86X29	Lipolysis-stimulated lipoprotein receptor (Angulin-1)	LSR	Lipolysis-stimulated lipoprotein receptor	0.000945
+Q8NBJ4	Golgi membrane protein 1 (Golgi membrane protein GP73) (Golgi phosphoprotein 2)	GOLM1	Golgi membrane protein 1	0.00284
+Q9BYF1	Angiotensin-converting enzyme 2 (EC 3.4.17.23) (Angiotensin-converting enzyme homolog) (ACEH) (Angiotensin-converting enzyme-related carboxypeptidase) (ACE-related carboxypeptidase) (EC 3.4.17.-) (Metalloprotease MPROT15) [Cleaved into: Processed angiotensin-converting enzyme 2]	ACE2	Angiotensin-converting enzyme 2	0.00832
+Q15084	Protein disulfide-isomerase A6 (EC 5.3.4.1) (Endoplasmic reticulum protein 5) (ER protein 5) (ERp5) (Protein disulfide isomerase P5) (Thioredoxin domain-containing protein 7)	PDIA6	Protein disulfide-isomerase A6	0.00222
+P04196	Histidine-rich glycoprotein (Histidine-proline-rich glycoprotein) (HPRG)	HRG	Histidine-rich glycoprotein	0.00776
+P19022	Cadherin-2 (CDw325) (Neural cadherin) (N-cadherin) (CD antigen CD325)	CADH2	Cadherin-2	0.00787
+P10619	Lysosomal protective protein (EC 3.4.16.5) (Carboxypeptidase C) (Carboxypeptidase L) (Cathepsin A) (Protective protein cathepsin A) (PPCA) (Protective protein for beta-galactosidase) [Cleaved into: Lysosomal protective protein 32 kDa chain; Lysosomal protective protein 20 kDa chain]	PPGB	Lysosomal protective protein	0.0279
+O43493	Trans-Golgi network integral membrane protein 2 (Trans-Golgi network glycoprotein 46) (TGN38 homolog) (hTGN46) (Trans-Golgi network glycoprotein 48) (hTGN48) (Trans-Golgi network glycoprotein 51) (hTGN51) (Trans-Golgi network protein 2)	TGON2	Trans-Golgi network integral membrane protein 2	0.0116
+Q92820	Gamma-glutamyl hydrolase (EC 3.4.19.9) (Conjugase) (GH) (Gamma-Glu-X carboxypeptidase)	GGH	Gamma-glutamyl hydrolase	0.00514
+Q15293	Reticulocalbin-1	RCN1	Reticulocalbin-1	0.0197
+P08123	Collagen alpha-2(I) chain (Alpha-2 type I collagen)	CO1A2	Collagen alpha-2(I) chain	0.0313
+Q14766	Latent-transforming growth factor beta-binding protein 1 (LTBP-1) (Transforming growth factor beta-1-binding protein 1) (TGF-beta1-BP-1)	LTBP1	Latent-transforming growth factor beta-binding protein 1	0.0323
+Q9H6S3	Epidermal growth factor receptor kinase substrate 8-like protein 2 (EPS8-like protein 2) (Epidermal growth factor receptor pathway substrate 8-related protein 2) (EPS8-related protein 2)	ES8L2	Epidermal growth factor receptor kinase substrate 8-like protein 2	0.0207
+P07998	Ribonuclease pancreatic (EC 4.6.1.18) (HP-RNase) (RIB-1) (RNase UpI-1) (Ribonuclease 1) (RNase 1) (Ribonuclease A) (RNase A)	RNAS1	Ribonuclease pancreatic	0.00965
+P07686	Beta-hexosaminidase subunit beta (EC 3.2.1.52) (Beta-N-acetylhexosaminidase subunit beta) (Hexosaminidase subunit B) (Cervical cancer proto-oncogene 7 protein) (HCC-7) (N-acetyl-beta-glucosaminidase subunit beta) [Cleaved into: Beta-hexosaminidase subunit beta chain B; Beta-hexosaminidase subunit beta chain A]	HEXB	Beta-hexosaminidase subunit beta	0.0484
+Q99969	Retinoic acid receptor responder protein 2 (Chemerin) (RAR-responsive protein TIG2) (Tazarotene-induced gene 2 protein)	RARR2	Retinoic acid receptor responder protein 2	0.0417
+P33908	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA (EC 3.2.1.113) (Man(9)-alpha-mannosidase) (Man9-mannosidase) (Mannosidase alpha class 1A member 1) (Processing alpha-1,2-mannosidase IA) (Alpha-1,2-mannosidase IA)	MA1A1	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA	0.00609
+P09603	Macrophage colony-stimulating factor 1 (CSF-1) (M-CSF) (MCSF) (Lanimostim) [Cleaved into: Processed macrophage colony-stimulating factor 1]	CSF1	Macrophage colony-stimulating factor 1	0.0365
+Q99674	Cell growth regulator with EF hand domain protein 1 (Cell growth regulatory gene 11 protein) (Hydrophobestin)	CGRE1	Cell growth regulator with EF hand domain protein 1	0.0212
+Q7KYR7	Butyrophilin subfamily 2 member A1	BT2A1	Butyrophilin subfamily 2 member A1	0.0156
+P01034	Cystatin-C (Cystatin-3) (Gamma-trace) (Neuroendocrine basic polypeptide) (Post-gamma-globulin)	CYTC	Cystatin-C	0.0381
+P08603	Complement factor H (H factor 1)	CFAH	Complement factor H	0.0228
+P05543	Thyroxine-binding globulin (Serpin A7) (T4-binding globulin)	THBG	Thyroxine-binding globulin	0.00798
+P62937	Peptidyl-prolyl cis-trans isomerase A (PPIase A) (EC 5.2.1.8) (Cyclophilin A) (Cyclosporin A-binding protein) (Rotamase A) [Cleaved into: Peptidyl-prolyl cis-trans isomerase A, N-terminally processed]	PPIA	Peptidyl-prolyl cis-trans isomerase A	0.0128
+P60709	Actin, cytoplasmic 1 (EC 3.6.4.-) (Beta-actin) [Cleaved into: Actin, cytoplasmic 1, N-terminally processed]	ACTB	Actin, cytoplasmic 1	0.00676
+P06681	Complement C2 (EC 3.4.21.43) (C3/C5 convertase) [Cleaved into: Complement C2b fragment; Complement C2a fragment]	CO2	Complement C2	0.0197
+P03952	Plasma kallikrein (EC 3.4.21.34) (Fletcher factor) (Kininogenin) (Plasma prekallikrein) (PKK) [Cleaved into: Plasma kallikrein heavy chain; Plasma kallikrein light chain]	KLKB1	Plasma kallikrein	0.0275
+P05154	Plasma serine protease inhibitor (Acrosomal serine protease inhibitor) (Plasminogen activator inhibitor 3) (PAI-3) (PAI3) (Protein C inhibitor) (PCI) (Serpin A5)	IPSP	Plasma serine protease inhibitor	0.0224
+P10599	Thioredoxin (Trx) (ATL-derived factor) (ADF) (Surface-associated sulphydryl protein) (SASP) (allergen Hom s Trx)	THIO	Thioredoxin	0.00607
+P07360	Complement component C8 gamma chain	CO8G	Complement component C8 gamma chain	0.0132
+P01024	Complement C3 (C3 and PZP-like alpha-2-macroglobulin domain-containing protein 1) [Cleaved into: Complement C3 beta chain; C3-beta-c (C3bc); Complement C3 alpha chain; C3a anaphylatoxin; Acylation stimulating protein (ASP) (C3adesArg); Complement C3b alpha' chain; Complement C3c alpha' chain fragment 1; Complement C3dg fragment; Complement C3g fragment; Complement C3d fragment; Complement C3f fragment; Complement C3c alpha' chain fragment 2]	CO3	Complement C3	0.0119
+Q6ZVX7	F-box only protein 50 (NCC receptor protein 1 homolog) (NCCRP-1) (Non-specific cytotoxic cell receptor protein 1 homolog)	FBX50	F-box only protein 50	0.0157
+P08185	Corticosteroid-binding globulin (CBG) (Serpin A6) (Transcortin)	CBG	Corticosteroid-binding globulin	0.017
+P04278	Sex hormone-binding globulin (SHBG) (Sex steroid-binding protein) (SBP) (Testis-specific androgen-binding protein) (ABP) (Testosterone-estradiol-binding globulin) (TeBG) (Testosterone-estrogen-binding globulin)	SHBG	Sex hormone-binding globulin	0.00836
+P18669	Phosphoglycerate mutase 1 (EC 5.4.2.11) (EC 5.4.2.4) (BPG-dependent PGAM 1) (Phosphoglycerate mutase isozyme B) (PGAM-B)	PGAM1	Phosphoglycerate mutase 1	0.00615
+B9A064	Immunoglobulin lambda-like polypeptide 5 (G lambda-1) (Germline immunoglobulin lambda 1)	IGLL5	Immunoglobulin lambda-like polypeptide 5	0.006
+P02787	Serotransferrin (Transferrin) (Beta-1 metal-binding globulin) (Siderophilin)	TRFE	Serotransferrin	0.00412
+P01767	NA	HV306	Ig heavy chain V-III region BUT	0.0321
+Q14520	Hyaluronan-binding protein 2 (EC 3.4.21.-) (Factor VII-activating protease) (Factor seven-activating protease) (FSAP) (Hepatocyte growth factor activator-like protein) (Plasma hyaluronan-binding protein) [Cleaved into: Hyaluronan-binding protein 2 50 kDa heavy chain; Hyaluronan-binding protein 2 50 kDa heavy chain alternate form; Hyaluronan-binding protein 2 27 kDa light chain; Hyaluronan-binding protein 2 27 kDa light chain alternate form]	HABP2	Hyaluronan-binding protein 2	0.0112
+P09211	Glutathione S-transferase P (EC 2.5.1.18) (GST class-pi) (GSTP1-1)	GSTP1	Glutathione S-transferase P	0.00332
+P05090	Apolipoprotein D (Apo-D) (ApoD)	APOD	Apolipoprotein D	0.0186
+Q9Y6R7	IgGFc-binding protein (Fcgamma-binding protein antigen) (FcgammaBP)	FCGBP	IgGFc-binding protein	0.00318
+P01860	Immunoglobulin heavy constant gamma 3 (HDC) (Heavy chain disease protein) (Ig gamma-3 chain C region)	IGHG3	Ig gamma-3 chain C region	0.0181
+P19827	Inter-alpha-trypsin inhibitor heavy chain H1 (ITI heavy chain H1) (ITI-HC1) (Inter-alpha-inhibitor heavy chain 1) (Inter-alpha-trypsin inhibitor complex component III) (Serum-derived hyaluronan-associated protein) (SHAP)	ITIH1	Inter-alpha-trypsin inhibitor heavy chain H1	0.00724
+P29622	Kallistatin (Kallikrein inhibitor) (Peptidase inhibitor 4) (PI-4) (Serpin A4)	KAIN	Kallistatin	0.0108
+P04075	Fructose-bisphosphate aldolase A (EC 4.1.2.13) (Lung cancer antigen NY-LU-1) (Muscle-type aldolase)	ALDOA	Fructose-bisphosphate aldolase A	0.00606
+P05783	Keratin, type I cytoskeletal 18 (Cell proliferation-inducing gene 46 protein) (Cytokeratin-18) (CK-18) (Keratin-18) (K18)	K1C18	Keratin, type I cytoskeletal 18	0.0152
+P07384	Calpain-1 catalytic subunit (EC 3.4.22.52) (Calcium-activated neutral proteinase 1) (CANP 1) (Calpain mu-type) (Calpain-1 large subunit) (Cell proliferation-inducing gene 30 protein) (Micromolar-calpain) (muCANP)	CAN1	Calpain-1 catalytic subunit	0.0068
+P14618	Pyruvate kinase PKM (EC 2.7.1.40) (Cytosolic thyroid hormone-binding protein) (CTHBP) (Opa-interacting protein 3) (OIP-3) (Pyruvate kinase 2/3) (Pyruvate kinase muscle isozyme) (Threonine-protein kinase PKM2) (EC 2.7.11.1) (Thyroid hormone-binding protein 1) (THBP1) (Tumor M2-PK) (Tyrosine-protein kinase PKM2) (EC 2.7.10.2) (p58)	KPYM	Pyruvate kinase PKM	0.0169
+P40121	Macrophage-capping protein (Actin regulatory protein CAP-G)	CAPG	Macrophage-capping protein	0.00517
+P16070	CD44 antigen (CDw44) (Epican) (Extracellular matrix receptor III) (ECMR-III) (GP90 lymphocyte homing/adhesion receptor) (HUTCH-I) (Heparan sulfate proteoglycan) (Hermes antigen) (Hyaluronate receptor) (Phagocytic glycoprotein 1) (PGP-1) (Phagocytic glycoprotein I) (PGP-I) (CD antigen CD44)	CD44	CD44 antigen	0.000621
+Q9HCU0	Endosialin (Tumor endothelial marker 1) (CD antigen CD248)	CD248	Endosialin	0.018
+Q9H299	SH3 domain-binding glutamic acid-rich-like protein 3 (SH3 domain-binding protein 1) (SH3BP-1) (TNF inhibitory protein B1) (TIP-B1)	SH3L3	SH3 domain-binding glutamic acid-rich-like protein 3	0.0367
+P12814	Alpha-actinin-1 (Alpha-actinin cytoskeletal isoform) (F-actin cross-linking protein) (Non-muscle alpha-actinin-1)	ACTN1	Alpha-actinin-1	0.0205
+P02747	Complement C1q subcomponent subunit C	C1QC	Complement C1q subcomponent subunit C	0.0347
+P01033	Metalloproteinase inhibitor 1 (Erythroid-potentiating activity) (EPA) (Fibroblast collagenase inhibitor) (Collagenase inhibitor) (Tissue inhibitor of metalloproteinases 1) (TIMP-1)	TIMP1	Metalloproteinase inhibitor 1	0.00631
+Q15828	Cystatin-M (Cystatin-6) (Cystatin-E)	CYTM	Cystatin-M	0.00186
+P09382	Galectin-1 (Gal-1) (14 kDa laminin-binding protein) (HLBP14) (14 kDa lectin) (Beta-galactoside-binding lectin L-14-I) (Galaptin) (HBL) (HPL) (Lactose-binding lectin 1) (Lectin galactoside-binding soluble 1) (Putative MAPK-activating protein PM12) (S-Lac lectin 1)	LEG1	Galectin-1	0.0178
+P02647	Apolipoprotein A-I (Apo-AI) (ApoA-I) (Apolipoprotein A1) [Cleaved into: Proapolipoprotein A-I (ProapoA-I); Truncated apolipoprotein A-I (Apolipoprotein A-I(1-242))]	APOA1	Apolipoprotein A-I	0.000402
+Q9UGM5	Fetuin-B (16G2) (Fetuin-like protein IRL685) (Gugu)	FETUB	Fetuin-B	0.00922
+P07737	Profilin-1 (Epididymis tissue protein Li 184a) (Profilin I)	PROF1	Profilin-1	0.000586
+Q05707	Collagen alpha-1(XIV) chain (Undulin)	COEA1	Collagen alpha-1(XIV) chain	0.00817
+Q9BXP8	Pappalysin-2 (EC 3.4.24.-) (Pregnancy-associated plasma protein A2) (PAPP-A2) (Pregnancy-associated plasma protein E1) (PAPP-E)	PAPP2	Pappalysin-2	0.0225
+P05362	Intercellular adhesion molecule 1 (ICAM-1) (Major group rhinovirus receptor) (CD antigen CD54)	ICAM1	Intercellular adhesion molecule 1	0.0122
+P17948	Vascular endothelial growth factor receptor 1 (VEGFR-1) (EC 2.7.10.1) (Fms-like tyrosine kinase 1) (FLT-1) (Tyrosine-protein kinase FRT) (Tyrosine-protein kinase receptor FLT) (FLT) (Vascular permeability factor receptor)	VGFR1	Vascular endothelial growth factor receptor 1	0.00173
+P00558	Phosphoglycerate kinase 1 (EC 2.7.2.3) (Cell migration-inducing gene 10 protein) (Primer recognition protein 2) (PRP 2)	PGK1	Phosphoglycerate kinase 1	0.00349
+P68104	Elongation factor 1-alpha 1 (EF-1-alpha-1) (Elongation factor Tu) (EF-Tu) (Eukaryotic elongation factor 1 A-1) (eEF1A-1) (Leukocyte receptor cluster member 7)	EF1A1	Elongation factor 1-alpha 1	0.0153
+P04080	Cystatin-B (CPI-B) (Liver thiol proteinase inhibitor) (Stefin-B)	CYTB	Cystatin-B	0.028
+P13796	Plastin-2 (L-plastin) (LC64P) (Lymphocyte cytosolic protein 1) (LCP-1)	PLSL	Plastin-2	0.00233
+P19823	Inter-alpha-trypsin inhibitor heavy chain H2 (ITI heavy chain H2) (ITI-HC2) (Inter-alpha-inhibitor heavy chain 2) (Inter-alpha-trypsin inhibitor complex component II) (Serum-derived hyaluronan-associated protein) (SHAP)	ITIH2	Inter-alpha-trypsin inhibitor heavy chain H2	0.00681
+P01876	Immunoglobulin heavy constant alpha 1 (Ig alpha-1 chain C region) (Ig alpha-1 chain C region BUR) (Ig alpha-1 chain C region TRO)	IGHA1	Ig alpha-1 chain C region	0.00129
+P52209	6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.44)	6PGD	6-phosphogluconate dehydrogenase, decarboxylating	0.00298
+P80748	NA	LV302	Ig lambda chain V-III region LOI	0.0136
+P30041	Peroxiredoxin-6 (EC 1.11.1.27) (1-Cys peroxiredoxin) (1-Cys PRX) (24 kDa protein) (Acidic calcium-independent phospholipase A2) (aiPLA2) (EC 3.1.1.4) (Antioxidant protein 2) (Glutathione-dependent peroxiredoxin) (Liver 2D page spot 40) (Lysophosphatidylcholine acyltransferase 5) (LPC acyltransferase 5) (LPCAT-5) (Lyso-PC acyltransferase 5) (EC 2.3.1.23) (Non-selenium glutathione peroxidase) (NSGPx) (Red blood cells page spot 12)	PRDX6	Peroxiredoxin-6	0.00299
+P06733	Alpha-enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase) (C-myc promoter-binding protein) (Enolase 1) (MBP-1) (MPB-1) (Non-neural enolase) (NNE) (Phosphopyruvate hydratase) (Plasminogen-binding protein)	ENOA	Alpha-enolase	0.00437
+P05121	Plasminogen activator inhibitor 1 (PAI) (PAI-1) (Endothelial plasminogen activator inhibitor) (Serpin E1)	PAI1	Plasminogen activator inhibitor 1	0.00718
+P30044	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepressor 1) (Antioxidant enzyme B166) (AOEB166) (Liver tissue 2D-page spot 71B) (PLP) (Peroxiredoxin V) (Prx-V) (Peroxisomal antioxidant enzyme) (TPx type VI) (Thioredoxin peroxidase PMP20) (Thioredoxin-dependent peroxiredoxin 5)	PRDX5	Peroxiredoxin-5, mitochondrial	0.0186
+Q13421	Mesothelin (CAK1 antigen) (Pre-pro-megakaryocyte-potentiating factor) [Cleaved into: Megakaryocyte-potentiating factor (MPF); Mesothelin, cleaved form]	MSLN	Mesothelin	0.00186
+P30740	Leukocyte elastase inhibitor (LEI) (Monocyte/neutrophil elastase inhibitor) (EI) (M/NEI) (Peptidase inhibitor 2) (PI-2) (Serpin B1)	ILEU	Leukocyte elastase inhibitor	0.00151
+Q9NQ38	Serine protease inhibitor Kazal-type 5 (Lympho-epithelial Kazal-type-related inhibitor) (LEKTI) [Cleaved into: Hemofiltrate peptide HF6478; Hemofiltrate peptide HF7665]	ISK5	Serine protease inhibitor Kazal-type 5	0.000503
+P18428	Lipopolysaccharide-binding protein (LBP)	LBP	Lipopolysaccharide-binding protein	0.0288
+P06702	Protein S100-A9 (Calgranulin-B) (Calprotectin L1H subunit) (Leukocyte L1 complex heavy chain) (Migration inhibitory factor-related protein 14) (MRP-14) (p14) (S100 calcium-binding protein A9)	S10A9	Protein S100-A9	0.0093
+P37837	Transaldolase (EC 2.2.1.2)	TALDO	Transaldolase	0.0349
+P29508	Serpin B3 (Protein T4-A) (Squamous cell carcinoma antigen 1) (SCCA-1)	SPB3	Serpin B3	0.0114
+P20061	Transcobalamin-1 (TC-1) (Haptocorrin) (HC) (Protein R) (Transcobalamin I) (TC I) (TCI)	TCO1	Transcobalamin-1	0.0204
+P08637	Low affinity immunoglobulin gamma Fc region receptor III-A (IgG Fc receptor III-A) (CD16-II) (CD16a antigen) (Fc-gamma RIII-alpha) (Fc-gamma RIII) (Fc-gamma RIIIa) (FcRIII) (FcRIIIa) (FcgammaRIIIA) (FcR-10) (IgG Fc receptor III-2) (CD antigen CD16a)	FCG3A	Low affinity immunoglobulin gamma Fc region receptor III-A	0.00199
+P07988	Pulmonary surfactant-associated protein B (SP-B) (18 kDa pulmonary-surfactant protein) (6 kDa protein) (Pulmonary surfactant-associated proteolipid SPL(Phe))	PSPB	Pulmonary surfactant-associated protein B	0.00895
+P01619	NA	KV301	Ig kappa chain V-III region B6	0.0334
+P06310	NA	KV206	Ig kappa chain V-II region RPMI 6410	0.0297
+P13727	Bone marrow proteoglycan (BMPG) (Proteoglycan 2) [Cleaved into: Eosinophil granule major basic protein (EMBP) (MBP) (Pregnancy-associated major basic protein)]	PRG2	Bone marrow proteoglycan	0.000817
+P54108	Cysteine-rich secretory protein 3 (CRISP-3) (Specific granule protein of 28 kDa) (SGP28)	CRIS3	Cysteine-rich secretory protein 3	0.00195
+P62805	Histone H4	H4	Histone H4	0.0179
+Q01469	Fatty acid-binding protein 5 (Epidermal-type fatty acid-binding protein) (E-FABP) (Fatty acid-binding protein, epidermal) (Psoriasis-associated fatty acid-binding protein homolog) (PA-FABP)	FABP5	Fatty acid-binding protein, epidermal	0.00021
+Q6UWP8	Suprabasin	SBSN	Suprabasin	0.00237
+P02788	Lactotransferrin (Lactoferrin) (EC 3.4.21.-) (Growth-inhibiting protein 12) (Talalactoferrin) [Cleaved into: Lactoferricin-H (Lfcin-H); Kaliocin-1; Lactoferroxin-A; Lactoferroxin-B; Lactoferroxin-C]	TRFL	Lactotransferrin	0.00246
+P26447	Protein S100-A4 (Calvasculin) (Metastasin) (Placental calcium-binding protein) (Protein Mts1) (S100 calcium-binding protein A4)	S10A4	Protein S100-A4	0.00399
+P80188	Neutrophil gelatinase-associated lipocalin (NGAL) (25 kDa alpha-2-microglobulin-related subunit of MMP-9) (Lipocalin-2) (Oncogene 24p3) (Siderocalin) (p25)	NGAL	Neutrophil gelatinase-associated lipocalin	0.000216
+Q99877	Histone H2B type 1-N (Histone H2B.d) (H2B/d)	H2B1N	Histone H2B type 1-N	0.0105
+P19801	Amiloride-sensitive amine oxidase [copper-containing] (DAO) (Diamine oxidase) (EC 1.4.3.22) (Amiloride-binding protein 1) (Amine oxidase copper domain-containing protein 1) (Histaminase) (Kidney amine oxidase) (KAO)	AOC1	Amiloride-sensitive amine oxidase [copper-containing]	0.00028
+P52566	Rho GDP-dissociation inhibitor 2 (Rho GDI 2) (Ly-GDI) (Rho-GDI beta)	GDIR2	Rho GDP-dissociation inhibitor 2	0.00106
+P01619	NA	KV302	Ig kappa chain V-III region SIE	0.0369
+A0A0C4DH29	Immunoglobulin heavy variable 1-3	HV103	Ig heavy chain V-I region V35	0.00695
+P04211	NA	LV001	Ig lambda chain V region 4A	0.0099
+P03973	Antileukoproteinase (ALP) (BLPI) (HUSI-1) (Mucus proteinase inhibitor) (MPI) (Protease inhibitor WAP4) (Secretory leukocyte protease inhibitor) (Seminal proteinase inhibitor) (WAP four-disulfide core domain protein 4)	SLPI	Antileukoproteinase	6.63e-06

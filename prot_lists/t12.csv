@@ -1,69 +1,69 @@
-uniprot.id 	protein 	gene	p-value
-P60709 	Actin, cytoplasmic 1 	ACTB 	< 0.00001
-P63261 	Actin, cytoplasmic 2 	ACTG1 	< 0.00001
-P06733 	Alpha-enolase 	ENO1 	0.00001
-P00450 	Ceruloplasmin 	CP 	< 0.00001
-P06744 	Glucose-6-phosphate isomerase 	GPI 	< 0.00001
-P68871 	Hemoglobin subunit beta 	HBB 	< 0.00001
-P02042 	Hemoglobin subunit delta 	HBD 	< 0.00001
-P62805 	Histone H4 	HIST4H4 	< 0.00001
-P02774–3 	Isoform 3 of Vitamin D-binding protein 	GC 	< 0.00001
-P05164–3 	Isoform H7 of myeloperoxidase 	MPO 	< 0.00001
-P02788 	Lactoferrin 	LF 	< 0.00001
-P13796 	Lymphocyte cytosolic protein 1 	LCP1 	< 0.00001
-P08670 	Vimentin 	VIM 	< 0.00001
-P69905 	Hemoglobin subunit alpha 	HBA2 	0.00002
-P26038 	Moesin 	MSN 	0.00002
-P80188 	Lipocalin-2 	LCN2 	0.00002
-P29401 	Transketolase 	TKT 	0.00002
-P68032 	Actin, alpha cardiac muscle 1 	ACTC1 	0.00003
-P12814–3 	Isoform 3 of alpha-actinin-1 	ACTN1 	0.00003
-P02790 	Hemopexin 	HPX 	0.00004
-P04075 	Fructose-bisphosphate aldolase A 	ALDOA 	0.00005
-P52209–2 	Isoform 2 of 6-phosphogluconate dehydrogenase, decarboxylating 	PGD 	0.00005
-Q6S8J3 	POTE ankyrin domain family member E 	POTEE 	0.00005
-P02771 	Alpha-fetoprotein 	AFP 	0.00011
-P01008 	Antithrombin-III 	SERPINC1 	0.00011
-P13645 	Keratin, type I cytoskeletal 10 	KRT10 	0.00011
-Q9Y6R7 	IgGFc-binding protein 	FCGBP 	0.00013
-P10451–4 	Isoform D of Osteopontin 	SPP1 	0.00013
-P52566 	Rho GDP-dissociation inhibitor 2 	ARHGDIB 	0.00013
-P35579 	Myosin-9 	MYH9 	0.00017
-P21333 	Filamin-A 	FLNA 	0.00026
-P10451–5 	Isoform 5 of Osteopontin 	SPP1 	0.00026
-P00558 	Phosphoglycerate kinase 1 	PGK1 	0.00026
-P18669 	Phosphoglycerate mutase 1 	PGAM1 	0.00026
-P01833 	Polymeric immunoglobulin receptor 	PIGR 	0.00027
-P98160 	Basement membrane-specific heparan sulfate proteoglycan core protein 	HSPG2 	0.00028
-P13727 	Bone marrow proteoglycan 	PRG2 	0.00028
-P07858 	Cathepsin B 	CTSB 	0.00028
-P02675 	Fibrinogen beta chain 	FGB 	0.00028
-P18206–2 	Isoform 1 of Vinculin 	VCL 	0.00028
-P00751 	Complement factor B 	CFB 	0.0003
-Q9UHI8 	A disintegrin and metalloproteinase with thrombospondin motifs 1 	ADAMTS1 	0.00033
-P04004 	Vitronectin 	VTN 	0.00036
-P04040 	Catalase 	CAT 	0.00042
-O43707 	Alpha-actinin-4 	ACTN4 	0.00045
-P13797 	Plastin-3 	PLS3 	0.00045
-P09486 	SPARC 	SPARC 	0.00046
-P08107 	Heat shock 70 kDa protein 1A/1B 	HSPA1B 	0.00048
-Q6UWP8 	Suprabasin 	SBSN 	0.00048
-P01011 	Alpha-1-antichymotrypsin 	SERPINA3 	0.00049
-P02452 	Collagen alpha-1(I) chain 	COL1A1 	0.00049
-P06396 	Gelsolin 	GSN 	0.00049
-P00747 	Plasminogen 	PLG 	0.00049
-P06396–4 	Isoform 4 of Gelsolin 	GSN 	0.00055
-P02765 	Alpha-2-HS-glycoprotein 	AHSG 	0.00057
-P00915 	Carbonic anhydrase 1 	CA1 	0.00057
-P01024 	Complement C3 	C3 	0.00057
-P07737 	Profilin-1 	PFN1 	0.00057
-P04083 	Annexin A1 	ANXA1 	0.00058
-Q562R1 	Beta-actin-like protein 2 	ACTBL2 	0.00058
-P63104 	14–3-3 protein zeta/delta 	YWHAZ 	0.0007
-P02768 	Serum albumin 	UNQ696/PRO1341 	0.00074
-Q01469 	Fatty acid-binding protein, epidermal 	FABP5 	0.00085
-P11021 	78 kDa glucose-regulated protein 	HSPA5 	0.00088
-Q9HC84 	Mucin-5B 	MUC5B 	0.00088
-P31946 	14–3-3 protein beta/alpha 	YWHAB 	0.0009
-Q9UBC9 	Small proline-rich protein 3 	SPRR3 	0.00091
-P61626 	Lysozyme C 	LYZ 	0.00094
+uniprot.id	protein 	gene	p-value
+P60709	Actin, cytoplasmic 1 	ACTB 	< 0.00001
+P63261	Actin, cytoplasmic 2 	ACTG1 	< 0.00001
+P06733	Alpha-enolase 	ENO1 	0.00001
+P00450	Ceruloplasmin 	CP 	< 0.00001
+P06744	Glucose-6-phosphate isomerase 	GPI 	< 0.00001
+P68871	Hemoglobin subunit beta 	HBB 	< 0.00001
+P02042	Hemoglobin subunit delta 	HBD 	< 0.00001
+P62805	Histone H4 	HIST4H4 	< 0.00001
+P02774-3	Isoform 3 of Vitamin D-binding protein 	GC 	< 0.00001
+P05164-3	Isoform H7 of myeloperoxidase 	MPO 	< 0.00001
+P02788	Lactoferrin 	LF 	< 0.00001
+P13796	Lymphocyte cytosolic protein 1 	LCP1 	< 0.00001
+P08670	Vimentin 	VIM 	< 0.00001
+P69905	Hemoglobin subunit alpha 	HBA2 	0.00002
+P26038	Moesin 	MSN 	0.00002
+P80188	Lipocalin-2 	LCN2 	0.00002
+P29401	Transketolase 	TKT 	0.00002
+P68032	Actin, alpha cardiac muscle 1 	ACTC1 	0.00003
+P12814-3	Isoform 3 of alpha-actinin-1 	ACTN1 	0.00003
+P02790	Hemopexin 	HPX 	0.00004
+P04075	Fructose-bisphosphate aldolase A 	ALDOA 	0.00005
+P52209-2	Isoform 2 of 6-phosphogluconate dehydrogenase, decarboxylating 	PGD 	0.00005
+Q6S8J3	POTE ankyrin domain family member E 	POTEE 	0.00005
+P02771	Alpha-fetoprotein 	AFP 	0.00011
+P01008	Antithrombin-III 	SERPINC1 	0.00011
+P13645	Keratin, type I cytoskeletal 10 	KRT10 	0.00011
+Q9Y6R7	IgGFc-binding protein 	FCGBP 	0.00013
+P10451-4	Isoform D of Osteopontin 	SPP1 	0.00013
+P52566	Rho GDP-dissociation inhibitor 2 	ARHGDIB 	0.00013
+P35579	Myosin-9 	MYH9 	0.00017
+P21333	Filamin-A 	FLNA 	0.00026
+P10451-5	Isoform 5 of Osteopontin 	SPP1 	0.00026
+P00558	Phosphoglycerate kinase 1 	PGK1 	0.00026
+P18669	Phosphoglycerate mutase 1 	PGAM1 	0.00026
+P01833	Polymeric immunoglobulin receptor 	PIGR 	0.00027
+P98160	Basement membrane-specific heparan sulfate proteoglycan core protein 	HSPG2 	0.00028
+P13727	Bone marrow proteoglycan 	PRG2 	0.00028
+P07858	Cathepsin B 	CTSB 	0.00028
+P02675	Fibrinogen beta chain 	FGB 	0.00028
+P18206-2	Isoform 1 of Vinculin 	VCL 	0.00028
+P00751	Complement factor B 	CFB 	0.0003
+Q9UHI8	A disintegrin and metalloproteinase with thrombospondin motifs 1 	ADAMTS1 	0.00033
+P04004	Vitronectin 	VTN 	0.00036
+P04040	Catalase 	CAT 	0.00042
+O43707	Alpha-actinin-4 	ACTN4 	0.00045
+P13797	Plastin-3 	PLS3 	0.00045
+P09486	SPARC 	SPARC 	0.00046
+P08107	Heat shock 70 kDa protein 1A/1B 	HSPA1B 	0.00048
+Q6UWP8	Suprabasin 	SBSN 	0.00048
+P01011	Alpha-1-antichymotrypsin 	SERPINA3 	0.00049
+P02452	Collagen alpha-1(I) chain 	COL1A1 	0.00049
+P06396	Gelsolin 	GSN 	0.00049
+P00747	Plasminogen 	PLG 	0.00049
+P06396-4	Isoform 4 of Gelsolin 	GSN 	0.00055
+P02765	Alpha-2-HS-glycoprotein 	AHSG 	0.00057
+P00915	Carbonic anhydrase 1 	CA1 	0.00057
+P01024	Complement C3 	C3 	0.00057
+P07737	Profilin-1 	PFN1 	0.00057
+P04083	Annexin A1 	ANXA1 	0.00058
+Q562R1	Beta-actin-like protein 2 	ACTBL2 	0.00058
+P63104	14-3-3 protein zeta/delta 	YWHAZ 	0.0007
+P02768	Serum albumin 	UNQ696/PRO1341 	0.00074
+Q01469	Fatty acid-binding protein, epidermal 	FABP5 	0.00085
+P11021	78 kDa glucose-regulated protein 	HSPA5 	0.00088
+Q9HC84	Mucin-5B 	MUC5B 	0.00088
+P31946	14-3-3 protein beta/alpha 	YWHAB 	0.0009
+Q9UBC9	Small proline-rich protein 3 	SPRR3 	0.00091
+P61626	Lysozyme C 	LYZ 	0.00094
