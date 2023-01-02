@@ -10,7 +10,7 @@ setwd("~/Documents/results/cr/")
 load("1000g/genes_to_snps.RData")
 load("1000g/snps_to_genes.RData")
 
-NCAUSALGENES = 50
+NCAUSALGENES = 200
 
 # Load the genotypes
 gt3000 = data.table::fread("1000g/simulated_3000R.raw", h=T)
@@ -37,33 +37,10 @@ runGWAS = function(ys, ids, bfile){
                 " --clump simphenos/tmp_assoc.qassoc --clump-p1 5e-08 ",
                 "--clump-p2 0.00001 --clump-r2 0.10 --out simphenos/tmp_clumped"),
          ignore.stdout=T)
-  
+
   # analyze the results:
   res = read.table("simphenos/tmp_assoc.qassoc", h=T)
   return(which(res$P<5e-8))
-}
-
-# runs the C-R, formats the results, does some error handling
-runCR = function(obsgenes, sigma, indep){
-  # Processing for C-R:
-  listall = unique(unlist(obsgenes))
-  capt.hist = sapply(obsgenes, function(x) as.numeric(listall %in% x))
-  
-  if(length(listall)<2){
-    # mark NAs if only one gene reported
-    mod = data.frame(abundance=NA, stderr=NA, deviance=NA, df=NA, AIC=NA, BIC=NA, infoFit=NA)
-  } else {
-    mod = data.frame(closedp.0(capt.hist)$results)
-    # mark NAs in no-overlap cases:
-    if(mod$abundance[1]>1e7){
-      mod$abundance = NA
-      mod$stderr = NA
-    }
-  }
-  
-  mod$indep = indep
-  mod$sigma = sigma
-  return(mod)
 }
 
 # ------------------------------------------
@@ -71,7 +48,8 @@ runCR = function(obsgenes, sigma, indep){
 
 NITER = 300
 
-for(sigma in seq(10, 40, by=5)){
+
+for(sigma in seq(5, 35, by=5)){
   print(paste("------ sigma:", sigma, " -------------"))
   
   summaries = data.frame(h2s=NULL, numsignhits=NULL, run=NULL, i=NULL, sigma=NULL, indep=NULL)
@@ -85,14 +63,14 @@ for(sigma in seq(10, 40, by=5)){
     obsgenesI = list()
     
     for(run in c(1, 2)){
-      causal$geneeff = runif(nrow(causal), -10, 10)
-      # causalsnps = unnest(causal, snps)
-      # causalsnps$snpeff = rnorm(nrow(causalsnps), causalsnps$geneeff, 0.5)
+      causal$geneeff = rnorm(nrow(causal), 0, 5.0)
+      # causal$geneeff = runif(nrow(causal), -10, 10)
+      # can simulate variable snp effects, or just select one here:
       causalsnps = unnest(causal, snps) %>%
         group_by(gene) %>%
         sample_n(1)
       causalsnps$snpeff = causalsnps$geneeff
-      
+
       # simulate phenos
       xbeta = NULL
       ids = NULL
@@ -109,6 +87,7 @@ for(sigma in seq(10, 40, by=5)){
       ys = xbeta + rnorm(length(xbeta), 0, sigma)
       
       ressnps = runGWAS(ys, ids, bfile)
+
       foundgenes = snpstogenes$gene[ressnps]
       foundgenes = unique(foundgenes[!is.na(foundgenes)])
       obsgenes[[length(obsgenes)+1]] = foundgenes
@@ -118,7 +97,7 @@ for(sigma in seq(10, 40, by=5)){
       } else {
         noverl = length(intersect(foundgenes, obsgenes[[1]]))
       }
-      
+
       # store heritability etc:
       newrow = data.frame(h2s=var(xbeta)/var(ys), numsignhits=length(ressnps),
                           numsigngenes=length(foundgenes), noverl,
@@ -129,8 +108,6 @@ for(sigma in seq(10, 40, by=5)){
       # same but only w/ independent snps
       res = read.table("simphenos/tmp_clumped.clumped", h=T)
       ressnps = match(res$SNP, fullbim$V2)
-      # cat("causal ")
-      # print(sort(causalsnps$snps))
       # cat("found cl ")
       # print(ressnps)
 
@@ -139,39 +116,66 @@ for(sigma in seq(10, 40, by=5)){
       obsgenesI[[length(obsgenesI)+1]] = foundgenes
       # print(table(foundgenes %in% causalgenes))
       # print(foundgenes[!foundgenes %in% causalgenes])
-      # cat("not in causal: ")
-      # print(ressnps[!snpstogenes$gene[ressnps] %in% causalgenes])
-      
+
       if(run==1){
-        noverl = NA 
+        noverl = NA
       } else {
         noverl = length(intersect(foundgenes, obsgenesI[[1]]))
       }
-      
+
       # store heritability etc:
       newrow = data.frame(h2s=var(xbeta)/var(ys), numsignhits=length(ressnps),
-                          numsigngenes=length(foundgenes), noverl, 
+                          numsigngenes=length(foundgenes), noverl,
                           ntps=sum(foundgenes %in% causalgenes),
                           run=run, i=i, sigma=sigma, indep="clumped")
       summaries = bind_rows(summaries, newrow)
     }
-    # print(summaries)
-    # quit()
+
     
-    # Run the C-R analyses
-    mod = runCR(obsgenes, sigma, "all")
+    # Processing for C-R:
+    listall = unique(unlist(obsgenes))
+    capt.hist = sapply(obsgenes, function(x) as.numeric(listall %in% x))
+    
+    
+    # Run C-R + handle exceptions:  
+    if(length(listall)<2){
+      # mark NAs if only one gene reported
+      mod = data.frame(abundance=NA, stderr=NA, deviance=NA, df=NA, AIC=NA, BIC=NA, infoFit=NA)
+    } else {
+      mod = data.frame(closedp.0(capt.hist)$results)
+      # mark NAs in no-overlap cases:
+      if(mod$abundance[1]>1e7){
+        mod$abundance = NA
+        mod$stderr = NA
+      }  
+    }
+    mod$indep = "all"
+    mod$sigma = sigma
     crres = bind_rows(crres, mod)
     
-    mod = runCR(obsgenesI, sigma, "clumped")
+    # same but only with independent genes:
+    listall = unique(unlist(obsgenesI))
+    capt.hist = sapply(obsgenesI, function(x) as.numeric(listall %in% x))
+    if(length(listall)<2){
+      # mark NAs if only one gene reported
+      mod = data.frame(abundance=NA, stderr=NA, deviance=NA, df=NA, AIC=NA, BIC=NA, infoFit=NA)
+    } else {
+      mod = data.frame(closedp.0(capt.hist)$results)
+      # mark NAs in no-overlap cases:
+      if(mod$abundance[1]>1e7){
+        mod$abundance = NA
+        mod$stderr = NA
+      }
+    }
+
+    mod$indep = "clumped"
+    mod$sigma = sigma
     crres = bind_rows(crres, mod)
-    
+
   }
   
-  write.table(crres, paste0("crres_2000x2_s", sigma, ".csv"), sep="\t", quote=F, col.names=T, row.names=F)
-  write.table(summaries, paste0("studysummaries_2000x2_s", sigma, ".csv"), sep="\t", quote=F, col.names=T, row.names=F)
-  
+  write.table(crres, paste0("crres_2000x2_200g_s", sigma, ".csv"), sep="\t", quote=F, col.names=T, row.names=F)
+  write.table(summaries, paste0("studysummaries_2000x2_200g_s", sigma, ".csv"), sep="\t", quote=F, col.names=T, row.names=F)
 }
-
-
 
 

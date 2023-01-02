@@ -9,6 +9,9 @@ setwd("~/Documents/results/cr/")
 load("1000g/genes_to_snps.RData")
 load("1000g/snps_to_genes.RData")
 
+# lists of independent snps
+fullbim = data.table::fread("1000g/simulated_1000.bim", h=F)
+
 NCAUSALGENES = 50
 
 # Load the genotypes
@@ -33,9 +36,42 @@ runGWAS = function(ys, ids, bfile){
   system(paste0("plink --bfile 1000g/",bfile," --pheno simphenos/tmpy.pheno --assoc --out simphenos/tmp_assoc"),
          ignore.stdout=T)
   
+  # run plink clumping
+  system(paste0("plink --bfile 1000g/",bfile,
+                " --clump simphenos/tmp_assoc.qassoc --clump-p1 5e-08 ",
+                "--clump-p2 0.00001 --clump-r2 0.10 --out simphenos/tmp_clumped"),
+         ignore.stdout=T)
+  
   # analyze the results:
-  res = read.table("simphenos/tmp_assoc.qassoc", h=T)
-  return(which(res$P<5e-8))
+  # res = read.table("simphenos/tmp_assoc.qassoc", h=T)
+  res = read.table("simphenos/tmp_clumped.clumped", h=T)$SNP
+  # return(which(res$P<5e-8))
+  return(res)
+}
+
+# runs the C-R, formats the results, does some error handling
+runCR = function(obsgenes){
+  # Processing for C-R:
+  listall = unique(unlist(obsgenes))
+  capt.hist = sapply(obsgenes, function(x) as.numeric(listall %in% x))
+  
+  if(length(listall)<2 | dim(capt.hist)[2]<2){
+    # mark NAs if only one gene reported
+    # or if only one study had detections
+    mod = data.frame(abundance=NA, stderr=NA, deviance=NA, df=NA,
+                     AIC=NA, BIC=NA, infoFit=NA)
+  } else {
+    mod = closedp(capt.hist)
+    moddf = data.frame(mod$results)
+    # moddf$parameters = mod$parameters  # would interfere w/ csv export
+    mod = moddf
+    # mark NAs in no-overlap cases:
+    notconverged = which(mod$abundance>1e7 | mod$abundance<0)
+    mod$abundance[notconverged] = NA
+    mod$stderr[notconverged] = NA
+  }
+  mod$model = rownames(mod)
+  return(mod)
 }
 
 # ------------------------------------------
@@ -44,7 +80,7 @@ runGWAS = function(ys, ids, bfile){
 summaries = data.frame(h2s=NULL, numsignhits=NULL, run=NULL, i=NULL)
 crres = tibble()
 
-NITER = 500
+NITER = 300
 
 for(i in 1:NITER){
   print(i)
@@ -53,7 +89,8 @@ for(i in 1:NITER){
   obsgenes = list()
   
   for(run in c(1000, 2000, 3000)){
-    causal$geneeff = rnorm(nrow(causal), 0, 0.5)
+    causal$geneeff = runif(nrow(causal), -10, 10)
+    # causal$geneeff = rnorm(nrow(causal), 0, 0.5)
     causalsnps = unnest(causal, snps)
     causalsnps$snpeff = rnorm(nrow(causalsnps), causalsnps$geneeff, 0.5)
     
@@ -71,41 +108,23 @@ for(i in 1:NITER){
     }
     ys = xbeta + rnorm(length(xbeta), 0, 40)
     
-    ressnps = runGWAS(ys, ids, bfile)
+    res = runGWAS(ys, ids, bfile)
+    ressnps = match(res, fullbim$V2)
+    
     foundgenes = snpstogenes$gene[ressnps]
     foundgenes = unique(foundgenes[!is.na(foundgenes)])
     obsgenes[[length(obsgenes)+1]] = foundgenes
     
     # store heritability etc:
     newrow = data.frame(h2s=var(xbeta)/var(ys), numsignhits=length(ressnps),
-                        numsigngenes=length(foundgenes), run=run, i=i)
+                        numsigngenes=length(foundgenes),
+                        ntps=sum(foundgenes %in% causalgenes),
+                        run=run, i=i)
     summaries = bind_rows(summaries, newrow)
   }
-  # print(summaries)
   
-  # Processing for C-R:
-  listall = unique(unlist(obsgenes))
-  capt.hist = sapply(obsgenes, function(x) as.numeric(listall %in% x))
-  # print(capt.hist)
-  
-  # Run C-R + handle exceptions:  
-  if(length(listall)==1){
-    # mark NAs if only one gene reported
-    mod = data.frame(abundance=NA, stderr=NA, deviance=NA, df=NA, AIC=NA, BIC=NA, infoFit=NA, parameters=NA)
-  } else {
-    mod = closedp(capt.hist)
-    moddf = data.frame(mod$results)
-    moddf$parameters = mod$parameters
-    mod = moddf
-    # mark NAs in no-overlap cases:
-    notconverged = which(mod$abundance>1e7 | mod$abundance<0)
-    mod$abundance[notconverged] = NA
-    mod$stderr[notconverged] = NA
-    mod$parameters[notconverged] = NA
-  }
-  mod$i = i
-  mod$model = rownames(mod)
-  
+  # C-R:
+  mod = runCR(obsgenes)
   crres = bind_rows(crres, mod)
 }
 
