@@ -26,12 +26,12 @@ res %>%
   geom_hline(data=data.frame(ncausalgenes=c(30,100,300)),
              aes(yintercept=ncausalgenes), lty="dashed") +
   geom_boxplot(aes(y=abundance), outlier.size=0.5) +
-  geom_text(data=nafracs, aes(y=7, label=fracna), col="#5E8C84") + 
+  geom_text(data=nafracs, aes(y=6, label=fracna), col="#5E8C84") + 
   labs(tag="% non-\nusable") +
   facet_wrap(~ncausalgenes, scales="free_x", labeller=label_both) +
   scale_y_log10() + xlab("detection prob.") + ylab("estimate") +
   scale_fill_brewer(palette="Set3", direction=-1, name=NULL) + theme_bw() +
-  theme(plot.tag.position = c(0.9,0.35), plot.tag=element_text(size=11, colour="#5E8C84"),
+  theme(plot.tag.position = c(0.9,0.3), plot.tag=element_text(size=11, colour="#5E8C84"),
         legend.text=element_text(size=11))
 ggsave("plots/fig1a-simdirect.png", width=4, height=3)
 
@@ -101,28 +101,60 @@ res %>%
 ggsave("plots/fig1-simres.png", width=7, height=3)
 
 
-
 # ----------------
 # sim 2
-res = tibble()
 
-res = read.table(paste0("crres_x3_s40.csv"), h=T, sep="\t")
+res1 = read.table(paste0("crres_x3b_g200_s50.csv"), h=T, sep="\t")
+res1$ncausalgenes = 200
+res2 = read.table(paste0("crres_x3b_s50.csv"), h=T, sep="\t")
+res2$ncausalgenes = 50
+
+# drop behavioral-component models
+res = bind_rows(res1, res2) %>% filter(!model %in% c("Mb", "Mbh"))
 ggplot(res, aes(y=abundance, x=model, group=model)) +
-  geom_boxplot() +
-  scale_y_log10() +
+  geom_hline(data=data.frame(ncausalgenes=c(50,200)),
+             aes(yintercept=ncausalgenes), lty="dashed") +
+  geom_boxplot() + facet_wrap(~ncausalgenes) + 
+  scale_y_log10() + ylab("estimate") +
   coord_cartesian(ylim=c(1e-1,1e5)) + 
-  theme_bw()
+  theme_bw() + theme(axis.text.x = element_text(angle=60))
+ggsave("plots/fig3-sim2res.png", width=7, height=3)
+
+stsums1 = read.table("studysummaries_x3b_g200_s50.csv", h=T)
+stsums1$ncausalgenes = 200
+stsums2 = read.table("studysummaries_x3b_s50.csv", h=T)
+stsums2$ncausalgenes = 50
+
+bind_rows(stsums1, stsums2) %>%
+  group_by(ncausalgenes) %>%
+  summarize(hits=median(numsignhits), genes=median(numsigngenes), tps=median(ntps))
+
+##### -------------- tests -------------
 
 
+load("/mnt/GU/results/cr/tmp_obsgenes_x3b_g200_s50.RData")
+load("/mnt/GU/results/cr/tmp_causalgenes_x3b_g200_s50.RData")
+obsgenes1 = obsgenes_all[[50]][[3]]
+table(obsgenes1 %in% causalgenes_all[[1]])
+gff = gff2
+gff$causal = gff$gene %in% causalgenes_all[[50]]
+gff$detected = gff$gene %in% obsgenes1
+gff$pos = 1:nrow(gff)
+filter(gff, causal | detected)
 
+genenums = t(sapply(obsgenes_all, function(x) sapply(x, length) ))
 
+abvec2 = sapply(obsgenes_all, function(x) runCR(x)$abundance[2])
+genenums = data.frame(genenums, abvec)
+genenums$abvecT = abvec2
+group_by(genenums, X1>10) %>%
+  summarize(median(abvec), median(abvecT))
 
-# two problems:
-# 1. at small sigma/ high det. p., too high
-# b/c snps still implicate multiple genes through LD
-# - will show that this is removed after pruning (which would normally be done by researcher)
-# 2. at high sigma/ small det. p., too low
-# why??
+genes3k = lapply(obsgenes_all, "[[", 3)
+genes3k = mapply(list, genes3k[seq(1, 50, 2)], genes3k[seq(2,50,2)], SIMPLIFY = F)
+abvec = sapply(genes3k, function(x) runCR(x)$abundance[1])
+
+match(obsgenes_all[[1]][[3]], gff2$gene)
 
 #### ----------- more tests --------------
 

@@ -80,7 +80,7 @@ rule simulatestudygenos:
 	input:
 		"/home/julius/Documents/results/cr/1000g/simulated_1000.bed",
 		"/home/julius/Documents/results/cr/1000g/simulated_3000.bed",
-		"/home/julius/Documents/results/cr/1000g/simulated_10000.bed"
+		"/home/julius/Documents/results/cr/1000g/simulated_9000.bed"
 		
 rule simulatephenos:
 	input:

@@ -12,7 +12,7 @@ load("1000g/snps_to_genes.RData")
 # lists of independent snps
 fullbim = data.table::fread("1000g/simulated_1000.bim", h=F)
 
-NCAUSALGENES = 50
+NCAUSALGENES = 200
 
 # Load the genotypes
 gt9000 = data.table::fread("1000g/simulated_9000R.raw", h=T)
@@ -92,9 +92,11 @@ for(i in 1:NITER){
   obsgenes = list()
   
   for(run in c(1000, 3000, 9000)){
-    causal$geneeff = runif(nrow(causal), -10, 10)
+    # causal$geneeff = runif(nrow(causal), -10, 10)
+    # causalsnps = unnest(causal, snps)
+    # causalsnps$snpeff = rnorm(nrow(causalsnps), causalsnps$geneeff, 0.5)
     
-    # causal$geneeff = rnorm(nrow(causal), 0, 5.0)
+    causal$geneeff = rnorm(nrow(causal), 0, 5.0)
     causalsnps = unnest(causal, snps) %>%
       group_by(gene) %>%
       sample_n(1)
@@ -136,5 +138,5 @@ for(i in 1:NITER){
   crres = bind_rows(crres, mod)
 }
 
-write.table(crres, "crres_x3b_s50.csv", sep="\t", quote=F, col.names=T, row.names=F)
-write.table(summaries, "studysummaries_x3b_s50.csv", sep="\t", quote=F, col.names=T, row.names=F)
+write.table(crres, "crres_x3b_g200_s50.csv", sep="\t", quote=F, col.names=T, row.names=F)
+write.table(summaries, "studysummaries_x3b_g200_s50.csv", sep="\t", quote=F, col.names=T, row.names=F)

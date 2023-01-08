@@ -45,7 +45,7 @@ for(NCAUSALGENES in c(30, 100, 300)){
       obsgenes = list()
       
       for(run in c(1, 2)){
-        foundgenes = sample(causal$gene, round(detp*NCAUSALGENES))
+	foundgenes = causal$gene[rbinom(nrow(causal), 1, detp)==1]
         foundgenes = unique(foundgenes)
         obsgenes[[length(obsgenes)+1]] = foundgenes
       }
