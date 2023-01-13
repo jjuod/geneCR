@@ -130,7 +130,7 @@ for(i in 1:NITER){
                         run=run, i=i)
     summaries = bind_rows(summaries, newrow)
   }
-
+  
   # C-R:
   mod = runCR(obsgenes)
   crres = bind_rows(crres, mod)
