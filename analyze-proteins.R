@@ -2,6 +2,7 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(Rcapture)
+library(ggvenn)
 setwd("~/Documents/gitrep/geneCR/")
 
 # read in, convert to q-vals, cutoff
@@ -62,36 +63,85 @@ min(allts[[9]]$p.adj)
 allts[[10]]$p.adj = p.adjust(allts[[10]]$p.value, method="fdr", 200)
 min(allts[[10]]$p.adj)
 
-# t4
-allts[[11]]$p.adj = p.adjust(allts[[11]]$p.value, method="fdr", 690)
-min(allts[[11]]$p.adj)
-
 # t5
 # already at FDR<5%
-allts[[12]]
-allts[[12]]$p.adj = allts[[12]]$p.value
+allts[[11]]
+allts[[11]]$p.adj = allts[[11]]$p.value
 
 # t6
 # already at FDR<5%
-allts[[13]]
-allts[[13]]$p.adj = 0.05
+allts[[12]]
+allts[[12]]$p.adj = 0.05
 
 # t7
-allts[[14]]$p.adj = p.adjust(allts[[14]]$p.value, method="fdr", 244)
-min(allts[[14]]$p.adj)
-
-# t8
-# actually unclear how the p-values were generated,
-# but none would pass, assuming unadjusted
-allts[[15]]$p.adj = p.adjust(allts[[15]]$p.value, method="fdr", 1393)
-min(allts[[15]]$p.adj)
+allts[[13]]$p.adj = p.adjust(allts[[13]]$p.value, method="fdr", 244)
+min(allts[[13]]$p.adj)
 
 # t9
 # (note that this includes hits from several comparisons)
 # the q-values approx match an FDR adjustment for 1850
-allts[[16]]$p.adj = allts[[16]]$q.value
-min(allts[[16]]$p.adj)
+allts[[14]]$p.adj = allts[[14]]$q.value
+min(allts[[14]]$p.adj, na.rm=T)
+
 
 # hit counts for the table
-lapply(allts, function(x) filter(x, p.adj<=0.05) %>% summarize(n=n(), fname=max(fname))) %>%
-  bind_rows %>% arrange(fname)
+allts.pass = lapply(allts,
+              function(x) select(x, -one_of("p.value", "logP", "q.value", 
+                                            "Fold.change..group.Y.group.D."))) %>%
+  bind_rows() %>%
+  filter(p.adj<=0.05)
+
+allts.pass %>% group_by(fname) %>%
+  summarize(n())
+
+# drop one gene with seemingly wrong ID
+allts.pass = filter(allts.pass, !is.na(uniprot.id))
+
+# make sure all synonymous IDs are converted to the same primary ID
+allts.pass$uniprot.id = gsub("-[0-9]", "", allts.pass$uniprot.id)
+
+# C-R
+
+allts.wide.df = mutate(allts.pass[,c("fname", "uniprot.id")], det=1) %>%
+  distinct() %>%
+  spread(value="det", key="fname")
+
+nrow(allts.wide.df) # 912 total
+length(unique(filter(allts.pass, fname!="t5", fname!="t9-wids")$uniprot.id))
+length(filter(allts.pass, fname!="t5", fname!="t9-wids")$uniprot.id)
+# 311/385 unique/total
+
+allts.wide = !is.na(as.matrix(allts.wide.df[,2:ncol(allts.wide.df)]))
+allts.wide.df = cbind("id"=allts.wide.df$uniprot.id, data.frame(allts.wide))
+
+mod = closedp(allts.wide)
+mod
+
+mod.no59 = closedp(allts.wide[,-c(7,10)])
+mod.no59
+
+closedpCI.0(allts.wide[,-c(7,10)])
+closedpCI.t(allts.wide[,-c(7,10)], m="Mt")
+
+# t5, t9 is newborn, should be removed
+ggvenn(allts.wide.df, c("t9.wids", "t15.wids", "t14.wids"),
+       show_percentage=F)
+ggvenn(allts.wide.df, c("t9.wids", "t5", "t14.wids", "t15.wids"),
+       show_percentage=F)
+
+
+# Plot the overlaps for the main figure
+vennlabels = tribble(~x,   ~y,   ~hjust, ~vjust,
+          -1.0, -1.3, 1,      1,
+          -0.9,  1.2, 0.5,    0,
+          1.0,  1.2, 0.5,    0,
+          0.7, -1.6, 0,      1)
+vennlabels$text = c("Govia et al.", "Lee et al. (2021)", "Lee et al. (2020)", "Romero et al.")
+
+rename(allts.wide.df, `Govia et al.`=t15.wids, `Lee et al. (2021)`=t7,  
+       `Romero et al.`=t14.wids, `Lee et al. (2020)`=t12) %>%
+  ggvenn(vennlabels$text, show_percentage=F, set_name_size=0) +
+  geom_text(data = vennlabels,
+            aes(x = x, y = y, label = text, hjust = hjust, vjust = vjust),
+            size = 3.6)
+ggsave("~/Documents/results/cr/plots/fig4-venn.png", width=3, height=3)
