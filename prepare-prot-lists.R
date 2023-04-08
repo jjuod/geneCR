@@ -2,9 +2,9 @@ library(dplyr)
 library(tidyr)
 library(ggplot2)
 
-# Rough script to show what methods were needed
-# for parsing the mini-review protein lists into shared
-# uniprot id format.
+# Rough script to show what methods were needed for parsing the mini-review
+# protein lists into the ones provided in prot_lists/.
+# Basically, ensuring a matchable uniprot id for each protein.
 
 setwd("./prot_lists/")
 

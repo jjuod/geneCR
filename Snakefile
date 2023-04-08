@@ -79,23 +79,59 @@ rule simulategenos:
 rule simulatestudygenos:
 	input:
 		"/home/julius/Documents/results/cr/1000g/simulated_1000.bed",
+		"/home/julius/Documents/results/cr/1000g/simulated_2000.bed",
 		"/home/julius/Documents/results/cr/1000g/simulated_3000.bed",
 		"/home/julius/Documents/results/cr/1000g/simulated_9000.bed"
 		
-rule simulatephenos:
+
+rule simulategwas:
 	input:
-		"/home/julius/Documents/results/cr/1000g/simulated.bed"
+		"/home/julius/Documents/results/cr/1000g/genes_to_snps.RData",
+		"/home/julius/Documents/results/cr/1000g/snps_to_genes.RData",
+		"/home/julius/Documents/results/cr/1000g/simulated_1000R.raw",
+		"/home/julius/Documents/results/cr/1000g/simulated_2000R.raw",
+		"/home/julius/Documents/results/cr/1000g/simulated_3000R.raw",
+		"/home/julius/Documents/results/cr/1000g/simulated_9000R.raw",
+		"/home/julius/Documents/results/cr/1000g/simulated_1000.bed",
+		"/home/julius/Documents/results/cr/1000g/simulated_2000.bed",
+		"/home/julius/Documents/results/cr/1000g/simulated_3000.bed",
+		"/home/julius/Documents/results/cr/1000g/simulated_9000.bed"
 	output:
-		"/home/julius/Documents/results/cr/simphenos/cont.pheno"
-	script:
-		"./simulate-pheno.R"
+		"/home/julius/Documents/results/cr/crres_direct_30g.csv",
+		"/home/julius/Documents/results/cr/crres_direct_100g.csv",
+		"/home/julius/Documents/results/cr/crres_direct_300g.csv"  # and others not listed here
+	shell:
+		"""
+		# Run all the R scripts for simulating different kinds of GWASs
+		./run-sim-direct.R
+		./run-sim1.R
+		./run-sim1b.R
+		./run-sim2.R
+		./run-sim2b.R
+		"""
 
+rule plotsims:
+	input:
+		"/home/julius/Documents/results/cr/crres_direct_30g.csv",
+		"/home/julius/Documents/results/cr/crres_direct_100g.csv",
+		"/home/julius/Documents/results/cr/crres_direct_300g.csv"  # and others not listed here
+	output:
+		"/home/julius/Documents/results/cr/plots/fig1a-simdirect.png",
+		"/home/julius/Documents/results/cr/plots/fig1-simres.png",
+		"/home/julius/Documents/results/cr/plots/fig3-sim2res.png"
+	shell:
+		"""
+		# Plot the results produced above
+		./plot-sim-res.R
+		"""
 
-# output:	~/Documents/results/cr/1000g/simulated_ldscores.ld.ldscore.gz
-#		# Calculate LD scores
-#		conda activate ldsc
-#		./ldsc/ldsc.py --bfile {params.bedstem} \
-#			--l2 \
-#			--ld-wind-cm 1\
-#			--out 1000g/simulated_ldscores
-		
+rule casestudies:
+	input:
+		"./prot_lists/t1.csv"
+	output:
+		"/home/julius/Documents/results/cr/plots/fig4-venn.png"
+	shell:
+		"""
+		# Analyze the data for the Case Studies section.
+		# Note: protein lists were provided beforehand, see prepare-prot-lists.R
+		./analyze-casestudies.R

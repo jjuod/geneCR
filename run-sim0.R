@@ -5,6 +5,8 @@ library(Rcapture)
 
 setwd("~/Documents/results/cr/")
 
+# CONTROL simulations. NOT USED
+
 # loads gff2 and snpstogenes
 load("1000g/genes_to_snps.RData")
 load("1000g/snps_to_genes.RData")

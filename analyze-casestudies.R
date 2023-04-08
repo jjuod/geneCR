@@ -6,6 +6,9 @@ library(ggvenn)
 library(knitr)
 setwd("~/Documents/gitrep/geneCR/")
 
+# Script to perform the CASE STUDY parts, starting from the prepared
+# lists of proteins or manually entered lists of genes.
+
 ## --------- GENOMICS --------------
 
 # 1. only Swedish meta
