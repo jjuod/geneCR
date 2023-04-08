@@ -3,7 +3,71 @@ library(tidyr)
 library(ggplot2)
 library(Rcapture)
 library(ggvenn)
+library(knitr)
 setwd("~/Documents/gitrep/geneCR/")
+
+## --------- GENOMICS --------------
+
+# 1. only Swedish meta
+genes = list(ga = c("WNT4","HIVEP3","FAF1","TET3",
+                    "LSM3","ADCY5","EEFSEC","MRPS22",
+                    "ZBTB38","KCNAB1","LEKR","KDR",
+                    "HAND2","EBF1","HLA-DQA1","GDAP1",
+                    "FBXO32","COL27A1","TFAP4","MYOCD",
+                    "TCEA2","AGTR2","RAP2C"),
+             ptd = c("WNT4", "EEFSEC", "KCNAB1", "HAND2",
+                     "EBF1", "HLA-DQA1", "LRP5"))
+listall = unique(unlist(genes))
+capt.hist = sapply(genes, function(x) as.numeric(listall %in% x))
+mod = closedp(capt.hist)
+mod
+
+# 2. only Finnish meta
+genes.fin = list(ga = c("WNT4","WNT3A","TET3", "ADCY5","EEFSEC",
+                    "ZBTB38","KCNAB1","HAND2","KCNN2",
+                    "EBF1","RHAG","COBL",
+                    "GNAQ","COL27A1","AGTR2"),
+             ptd = c("EEFSEC", "GC", "EBF1", "LINC02824"))
+listall = unique(unlist(genes.fin))
+capt.hist = sapply(genes.fin, function(x) as.numeric(listall %in% x))
+mod.fin = closedp(capt.hist)
+mod.fin
+
+# 3. both metas
+genes.both = c(genes, genes.fin)
+listall = unique(unlist(genes.both))
+capt.hist = sapply(genes.both, function(x) as.numeric(listall %in% x))
+mod.both = closedp(capt.hist)
+mod.both
+
+# Make Table 1:
+tidy_cr = function(mod){
+  res = data.frame(mod$results)
+  res$mod = rownames(res)
+  rownames(res) = NULL
+  res = res[,c("mod", "abundance", "stderr","AIC","infoFit")]
+}
+table1 = bind_rows("swed"=tidy_cr(mod),
+          "fin"=tidy_cr(mod.fin),
+          "both"=tidy_cr(mod.both), .id="study")
+table1 %>%
+  format(digits=3)
+# drop poorly fitted models
+table1 %>%
+  filter(mod %in% c("M0", "Mt", "Mh Poisson2", "Mth Poisson2")) %>%
+  select(!one_of("infoFit")) %>%
+  mutate(stderr=round(stderr, 1)) %>%
+  format(digits=3) %>%
+  kable(format="latex")
+
+# numbers for text
+sapply(genes, length)
+sapply(genes.fin, length)
+table(unique(unlist(genes)) %in% unlist(genes.fin))
+table(unique(unlist(genes.fin)) %in% unlist(genes))
+
+
+## --------- PROTEOMICS --------------
 
 # read in, convert to q-vals, cutoff
 
